@@ -1,0 +1,582 @@
+digraph Mistral_T3 {
+
+    // ========================================
+    // GRAPH SETTINGS
+    // ========================================
+
+    graph [
+        label="T₃ — Mistral AI Infrastructure Ecosystem (October 2025)"
+        labelloc=t
+        fontsize=19
+        fontname="Bitter"
+        rankdir=TB
+        bgcolor="white"
+        nodesep=0.65
+        ranksep=0.55
+        splines=polyline
+        pad=0.35
+        outputorder=edgesfirst
+        newrank=true
+    ];
+
+    node [
+        fontname="Bitter"
+        fontsize=11
+        style=filled
+        color="#555555"
+        fontcolor="#111111"
+        penwidth=1.2
+        margin="0.16,0.10"
+    ];
+
+    edge [
+        fontname="Bitter"
+        fontsize=9
+        arrowsize=0.75
+        penwidth=1.5
+    ];
+
+    // ========================================
+    // UPSTREAM PROVIDERS
+    // ========================================
+
+    CoreWeave [
+        label="CoreWeave"
+        shape=box
+        fillcolor="#E5E7EB"
+    ];
+
+    CINECA [
+        label="CINECA / EuroHPC"
+        shape=box
+        fillcolor="#E5E7EB"
+    ];
+
+    Microsoft [
+        label="Microsoft Azure"
+        shape=box
+        fillcolor="#E5E7EB"
+    ];
+
+    CoreWeaveGPU [
+        label="NVIDIA H100\nGPU infrastructure"
+        shape=cylinder
+        fillcolor="#515151"
+        fontcolor="#FFFFFF"
+        color="#515151"
+    ];
+
+    Leonardo [
+        label="Leonardo\nsupercomputer"
+        shape=cylinder
+        fillcolor="#515151"
+        fontcolor="#FFFFFF"
+        color="#515151"
+    ];
+
+    AzureCompute [
+        label="Azure supercomputing\ninfrastructure"
+        shape=cylinder
+        fillcolor="#515151"
+        fontcolor="#FFFFFF"
+        color="#515151"
+    ];
+
+    // ========================================
+    // MISTRAL
+    // ========================================
+
+    Mistral [
+        label="Mistral AI"
+        shape=box
+        fillcolor="#BFDBFE"
+        color="#2563EB"
+        penwidth=2
+    ];
+
+    // ========================================
+    // ANNOUNCED COMPUTE INITIATIVE
+    // ========================================
+
+    MistralCompute [
+        label="Mistral Compute\nAnnounced June 2025\n(not yet verified operational)"
+        shape=cylinder
+        style="filled,dashed"
+        fillcolor="#FFF7ED"
+        color="#B45309"
+        fontcolor="#92400E"
+        penwidth=2
+    ];
+
+    // ========================================
+    // MODELS
+    // ========================================
+
+    OpenModels [
+        label="Open-weight models\nMistral 7B / Mixtral / NeMo\nand subsequent releases"
+        shape=box
+        style="rounded,filled"
+        fillcolor="#FEF3C7"
+    ];
+
+    ProprietaryModels [
+        label="Proprietary models\nMistral Large family\nand other hosted models"
+        shape=box
+        style="rounded,filled"
+        fillcolor="#FEF3C7"
+    ];
+
+    // ========================================
+    // OPEN-WEIGHT DEPLOYMENT
+    // ========================================
+
+    OpenUsers [
+        label="Model users /\ndeployers"
+        shape=box
+        fillcolor="#D1FAE5"
+    ];
+
+    SelfManaged [
+        label="Self-managed deployment\n(Local / private / third-party cloud)"
+        shape=cylinder
+        fillcolor="#D1FAE5"
+    ];
+
+    // ========================================
+    // MISTRAL-HOSTED API
+    // ========================================
+
+    Platform [
+        label="La Plateforme\nHosted API"
+        shape=box
+        fillcolor="#BFDBFE"
+        color="#2563EB"
+        penwidth=1.8
+    ];
+
+    HostedInfra [
+        label="Mistral-managed\ninference infrastructure\n(provider unspecified)"
+        shape=cylinder
+        fillcolor="#515151"
+        fontcolor="#FFFFFF"
+        color="#515151"
+    ];
+
+    APIUsers [
+        label="La Plateforme\nAPI customers"
+        shape=box
+        fillcolor="#D1FAE5"
+    ];
+
+    // ========================================
+    // HYPERSCALER DISTRIBUTION
+    // ========================================
+
+    AzureAI [
+        label="Azure AI\nManaged inference"
+        shape=box
+        fillcolor="#E5E7EB"
+    ];
+
+    Bedrock [
+        label="Amazon Bedrock\nManaged inference"
+        shape=box
+        fillcolor="#E5E7EB"
+    ];
+
+    Vertex [
+        label="Google Vertex AI\nManaged MaaS"
+        shape=box
+        fillcolor="#E5E7EB"
+    ];
+
+    CloudUsers [
+        label="Hyperscaler\ncloud customers"
+        shape=box
+        fillcolor="#D1FAE5"
+    ];
+
+    // ========================================
+    // ENTERPRISE PRODUCTS
+    // ========================================
+
+    LeChatEnterprise [
+        label="Le Chat Enterprise\n(May 2025)"
+        shape=box
+        fillcolor="#BFDBFE"
+        color="#2563EB"
+        penwidth=1.8
+    ];
+
+    MistralCode [
+        label="Mistral Code\n(June 2025)"
+        shape=box
+        fillcolor="#BFDBFE"
+        color="#2563EB"
+        penwidth=1.8
+    ];
+
+    AIStudio [
+        label="AI Studio\nPrivate beta (October 2025)"
+        shape=box
+        fillcolor="#BFDBFE"
+        color="#2563EB"
+        penwidth=1.8
+    ];
+
+    EnterpriseUsers [
+        label="Enterprise\ncustomers"
+        shape=box
+        fillcolor="#D1FAE5"
+    ];
+
+    PrivateDeployment [
+        label="Enterprise-controlled deployment\n(Private / hybrid / on-premises)"
+        shape=cylinder
+        fillcolor="#D1FAE5"
+    ];
+
+    // ========================================
+    // UPSTREAM RELATIONSHIPS
+    // ========================================
+
+    CoreWeave -> CoreWeaveGPU [
+        label="Provides"
+        color="#B45309"
+    ];
+
+    CINECA -> Leonardo [
+        label="Operates"
+        color="#B45309"
+    ];
+
+    Microsoft -> AzureCompute [
+        label="Provides"
+        color="#B45309"
+    ];
+
+    CoreWeaveGPU -> Mistral [
+        label="Contracted GPU capacity\n(2023)"
+        color="#B45309"
+    ];
+
+    Leonardo -> Mistral [
+        label="Computing resources\nand assistance"
+        color="#B45309"
+    ];
+
+    AzureCompute -> Mistral [
+        label="Supercomputing access\n(February 2024)"
+        color="#B45309"
+    ];
+
+    // ========================================
+    // ANNOUNCED COMPUTE RELATIONSHIP
+    // ========================================
+
+    Mistral -> MistralCompute [
+        label="Announces infrastructure initiative"
+        color="#B45309"
+        style=dashed
+        penwidth=1.8
+        constraint=false
+    ];
+
+    // ========================================
+    // MODEL DEVELOPMENT
+    // ========================================
+
+    Mistral -> OpenModels [
+        label="Develops and releases\nopen weights"
+        color="#2563EB"
+    ];
+
+    Mistral -> ProprietaryModels [
+        label="Develops and offers"
+        color="#2563EB"
+    ];
+
+    // ========================================
+    // OPEN-WEIGHT ACCESS
+    // ========================================
+
+    OpenModels -> OpenUsers [
+        label="Downloadable weights"
+        color="#059669"
+        style=dotted
+        penwidth=2
+    ];
+
+    OpenUsers -> SelfManaged [
+        label="Can independently deploy on"
+        color="#059669"
+        style=dotted
+        penwidth=2
+    ];
+
+    // ========================================
+    // LA PLATEFORME
+    // ========================================
+
+    Mistral -> Platform [
+        label="Operates hosted API"
+        color="#2563EB"
+    ];
+
+    Platform -> HostedInfra [
+        label="Provides inference service"
+        color="#2563EB"
+    ];
+
+    HostedInfra -> APIUsers [
+        label="Hosted inference\nvia API"
+        color="#2563EB"
+    ];
+
+    // ========================================
+    // HYPERSCALER DISTRIBUTION
+    // ========================================
+
+    ProprietaryModels -> AzureAI [
+        label="Managed model access"
+        color="#2563EB"
+    ];
+
+    OpenModels -> Bedrock [
+        label="Model availability"
+        color="#2563EB"
+    ];
+
+    ProprietaryModels -> Bedrock [
+        color="#2563EB"
+    ];
+
+    ProprietaryModels -> Vertex [
+        label="Managed MaaS"
+        color="#2563EB"
+    ];
+
+    AzureAI -> CloudUsers [
+        color="#2563EB"
+    ];
+
+    Bedrock -> CloudUsers [
+        color="#2563EB"
+    ];
+
+    Vertex -> CloudUsers [
+        color="#2563EB"
+    ];
+
+    // ========================================
+    // ENTERPRISE PRODUCT RELATIONSHIPS
+    // ========================================
+
+    Mistral -> LeChatEnterprise [
+        label="Offers enterprise assistant"
+        color="#2563EB"
+    ];
+
+    Mistral -> MistralCode [
+        label="Offers coding assistant"
+        color="#2563EB"
+    ];
+
+    Mistral -> AIStudio [
+        label="Introduces operational tooling"
+        color="#2563EB"
+    ];
+
+    LeChatEnterprise -> EnterpriseUsers [
+        label="Enterprise AI access"
+        color="#2563EB"
+    ];
+
+    MistralCode -> EnterpriseUsers [
+        label="Enterprise coding tools"
+        color="#2563EB"
+    ];
+
+    AIStudio -> EnterpriseUsers [
+        label="Platform tooling\n(private beta)"
+        color="#2563EB"
+    ];
+
+    EnterpriseUsers -> PrivateDeployment [
+        label="Private / hybrid deployment options"
+        color="#059669"
+        style=dotted
+        penwidth=2
+    ];
+
+    // ========================================
+    // LAYOUT
+    // ========================================
+
+    { rank=same; CoreWeave; CINECA; Microsoft; }
+
+    {
+        rank=same;
+        CoreWeaveGPU;
+        Leonardo;
+        AzureCompute;
+    }
+
+    {
+        rank=same;
+        OpenModels;
+        ProprietaryModels;
+        Platform;
+        LeChatEnterprise;
+        MistralCode;
+        AIStudio;
+    }
+
+    {
+        rank=same;
+        OpenUsers;
+        AzureAI;
+        Bedrock;
+        Vertex;
+        HostedInfra;
+        EnterpriseUsers;
+    }
+
+    {
+        rank=same;
+        SelfManaged;
+        CloudUsers;
+        APIUsers;
+        PrivateDeployment;
+    }
+
+    // ========================================
+    // LEGEND
+    // ========================================
+
+    Legend [
+        shape=plain
+        style=""
+        margin=0
+        label=<
+            <TABLE BORDER="0" CELLBORDER="0"
+                   CELLSPACING="3" CELLPADDING="3">
+
+                <TR>
+                    <TD COLSPAN="3" ALIGN="LEFT">
+                        <FONT FACE="Bitter"><B>LEGEND</B></FONT>
+                    </TD>
+                </TR>
+
+                <TR>
+                    <TD COLSPAN="3" ALIGN="LEFT">
+                        <FONT FACE="Bitter"><B>Nodes</B></FONT>
+                    </TD>
+                </TR>
+
+                <TR>
+                    <TD BGCOLOR="#BFDBFE" WIDTH="16" HEIGHT="14"></TD>
+                    <TD COLSPAN="2" ALIGN="LEFT">
+                        <FONT FACE="Bitter">Mistral AI / service</FONT>
+                    </TD>
+                </TR>
+
+                <TR>
+                    <TD BGCOLOR="#E5E7EB"></TD>
+                    <TD COLSPAN="2" ALIGN="LEFT">
+                        <FONT FACE="Bitter">External provider</FONT>
+                    </TD>
+                </TR>
+
+                <TR>
+                    <TD BGCOLOR="#515151"></TD>
+                    <TD COLSPAN="2" ALIGN="LEFT">
+                        <FONT FACE="Bitter">Computing infrastructure</FONT>
+                    </TD>
+                </TR>
+
+                <TR>
+                    <TD BGCOLOR="#FEF3C7"></TD>
+                    <TD COLSPAN="2" ALIGN="LEFT">
+                        <FONT FACE="Bitter">Model / artifact</FONT>
+                    </TD>
+                </TR>
+
+                <TR>
+                    <TD BGCOLOR="#D1FAE5"></TD>
+                    <TD COLSPAN="2" ALIGN="LEFT">
+                        <FONT FACE="Bitter">Users / deployment</FONT>
+                    </TD>
+                </TR>
+
+                <TR>
+                    <TD COLSPAN="3" HEIGHT="8"></TD>
+                </TR>
+
+                <TR>
+                    <TD COLSPAN="3" ALIGN="LEFT">
+                        <FONT FACE="Bitter"><B>Relationships</B></FONT>
+                    </TD>
+                </TR>
+
+                <TR>
+                    <TD COLSPAN="2" ALIGN="LEFT">
+                        <FONT FACE="Bitter" COLOR="#B45309">━━━━━━</FONT>
+                    </TD>
+                    <TD ALIGN="LEFT">
+                        <FONT FACE="Bitter">Compute provision / access</FONT>
+                    </TD>
+                </TR>
+
+                <TR>
+                    <TD COLSPAN="2" ALIGN="LEFT">
+                        <FONT FACE="Bitter" COLOR="#2563EB">━━━━━━</FONT>
+                    </TD>
+                    <TD ALIGN="LEFT">
+                        <FONT FACE="Bitter">Model / service provision</FONT>
+                    </TD>
+                </TR>
+
+                <TR>
+                    <TD COLSPAN="2" ALIGN="LEFT">
+                        <FONT FACE="Bitter" COLOR="#059669">············</FONT>
+                    </TD>
+                    <TD ALIGN="LEFT">
+                        <FONT FACE="Bitter">Deployment capability*</FONT>
+                    </TD>
+                </TR>
+
+                <TR>
+                    <TD COLSPAN="2" ALIGN="LEFT">
+                        <FONT FACE="Bitter" COLOR="#B45309">- - - - - -</FONT>
+                    </TD>
+                    <TD ALIGN="LEFT">
+                        <FONT FACE="Bitter">Announced initiative</FONT>
+                    </TD>
+                </TR>
+
+                <TR>
+                    <TD COLSPAN="3" HEIGHT="6"></TD>
+                </TR>
+
+                <TR>
+                    <TD COLSPAN="3" ALIGN="LEFT">
+                        <FONT FACE="Bitter" POINT-SIZE="9" COLOR="#555555">
+                            * Capability does not imply actual deployment.
+                        </FONT>
+                    </TD>
+                </TR>
+
+            </TABLE>
+        >
+    ];
+
+    // Place legend near upstream infrastructure
+    { rank=same; CoreWeaveGPU; Leonardo; AzureCompute; Legend; }
+
+    AzureCompute -> Legend [
+        style=invis
+        weight=10
+    ];
+
+}
