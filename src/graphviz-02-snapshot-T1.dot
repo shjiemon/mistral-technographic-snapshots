@@ -1,394 +1,50 @@
 digraph Mistral_T1 {
+    // ========================================
+    // GRAPH SETTINGS — consistent with original DOT files
+    // ========================================
+    graph [label="T₁ — Mistral AI Infrastructure Ecosystem (December 2023)", labelloc=t, fontsize=19, fontname="Bitter", rankdir=TB, bgcolor="white", nodesep=0.55, ranksep=0.55, splines=polyline, pad=0.35, outputorder=edgesfirst, newrank=true];
+    node [fontname="Bitter", fontsize=11, style=filled, color="#555555", fontcolor="#111111", penwidth=1.2, margin="0.16,0.10"];
+    edge [fontname="Bitter", fontsize=9, arrowsize=0.75, penwidth=1.5];
 
     // ========================================
-    // GRAPH SETTINGS
+    // NODES — corresponding to submitted diagram
     // ========================================
-
-    graph [
-        label="T₁ — Mistral AI Infrastructure Ecosystem (December 2023)"
-        labelloc=t
-        fontsize=19
-        fontname="Bitter"
-        rankdir=TB
-        bgcolor="white"
-        nodesep=0.65
-        ranksep=0.38
-        splines=line
-        pad=0.25
-        outputorder=edgesfirst
-        newrank=true
-    ];
-
-    node [
-        fontname="Bitter"
-        fontsize=11
-        style=filled
-        color="#555555"
-        fontcolor="#111111"
-        penwidth=1.2
-        margin="0.16,0.10"
-    ];
-
-    edge [
-        fontname="Bitter"
-        fontsize=9
-        arrowsize=0.75
-        penwidth=1.5
-    ];
+    CoreWeave [label="CoreWeave**", shape=box, fillcolor="#E5E7EB", color="#B7B7B7", fontcolor="#888888", fillcolor="#F1F1F1"];
+    CINECA [label="CINECA / EuroHPC**", shape=box, fillcolor="#E5E7EB", color="#B7B7B7", fontcolor="#888888", fillcolor="#F1F1F1"];
+    H100 [label="NVIDIA H100\nGPU infrastructure", shape=cylinder, fillcolor="#515151", fontcolor="white", color="#515151", color="#B7B7B7", fontcolor="#888888", fillcolor="#F1F1F1"];
+    Leonardo [label="Leonardo\nsupercomputer", shape=cylinder, fillcolor="#515151", fontcolor="white", color="#515151", color="#B7B7B7", fontcolor="#888888", fillcolor="#F1F1F1"];
+    Mistral [label="Mistral AI", shape=box, fillcolor="#BFDBFE", color="#2563EB", penwidth=2];
+    OpenUsers [label="Model users /\ndeployers", shape=box, fillcolor="#D1FAE5"];
+    SelfManaged [label="Self-managed deployment\n(Local / private / third-party cloud)", shape=cylinder, fillcolor="#D1FAE5"];
+    Mistral7B [label="Mistral 7B\nApache 2.0", shape=box, fillcolor="#FEF3C7", style="rounded,filled"];
+    Mixtral [label="Mixtral 8x7B\nApache 2.0", shape=box, fillcolor="#FEF3C7", style="rounded,filled"];
+    Platform [label="La Plateforme\n(beta)", shape=box, fillcolor="#BFDBFE", color="#2563EB", penwidth=2];
+    Hosted [label="Mistral-managed\ninference infrastructure", shape=cylinder, fillcolor="#515151", fontcolor="white", color="#515151"];
+    APIUsers [label="API customers", shape=box, fillcolor="#D1FAE5"];
+    Enix [label="Enix inference\nengineering and operations", shape=box, fillcolor="#E5E7EB"];
+    AzureCloud [label="Microsoft Azure\nCloud Infrastructure**", shape=box, fillcolor="#E5E7EB", color="#B7B7B7", fontcolor="#888888", fillcolor="#F1F1F1"];
+    GoogleCloud [label="Google Cloud\nCloud Infrastructure**", shape=box, fillcolor="#E5E7EB", color="#B7B7B7", fontcolor="#888888", fillcolor="#F1F1F1"];
 
     // ========================================
-    // EXTERNAL PROVIDERS
+    // RELATIONSHIPS — indexed by Google Sheet evidence register
+    // Blue = service; orange = infrastructure; green dotted = capability.
+    // Faded = inferred / historical; orange dashed = planned.
+    // Capability does not imply observed customer deployment.
     // ========================================
-
-    CoreWeave [
-        label="CoreWeave"
-        shape=box
-        fillcolor="#E5E7EB"
-    ];
-
-    CINECA [
-        label="CINECA / EuroHPC"
-        shape=box
-        fillcolor="#E5E7EB"
-    ];
-
-    // ========================================
-    // UPSTREAM INFRASTRUCTURE
-    // ========================================
-
-    CoreWeaveGPU [
-        label="NVIDIA H100\nGPU infrastructure"
-        shape=cylinder
-        fillcolor="#515151"
-        fontcolor="#FFFFFF"
-        color="#515151"
-    ];
-
-    Leonardo [
-        label="Leonardo\nsupercomputer"
-        shape=cylinder
-        fillcolor="#515151"
-        fontcolor="#FFFFFF"
-        color="#515151"
-    ];
-
-    // ========================================
-    // MISTRAL
-    // ========================================
-
-    Mistral [
-        label="Mistral AI"
-        shape=box
-        fillcolor="#BFDBFE"
-        color="#2563EB"
-        penwidth=2
-    ];
-
-    // ========================================
-    // OPEN-WEIGHT MODELS
-    // ========================================
-
-    Mistral7B [
-        label="Mistral 7B\nApache 2.0"
-        shape=box
-        style="rounded,filled"
-        fillcolor="#FEF3C7"
-    ];
-
-    Mixtral [
-        label="Mixtral 8x7B\nApache 2.0"
-        shape=box
-        style="rounded,filled"
-        fillcolor="#FEF3C7"
-    ];
-
-    OpenUsers [
-        label="Model users /\ndeployers"
-        shape=box
-        fillcolor="#D1FAE5"
-    ];
-
-    SelfManaged [
-        label="Self-managed deployment\n(Local / private / third-party cloud)"
-        shape=cylinder
-        fillcolor="#D1FAE5"
-        width=3.4
-        margin="0.25,0.18"
-    ];
-
-    // ========================================
-    // HOSTED INFERENCE
-    // ========================================
-
-    Platform [
-        label="La Plateforme\n(beta)"
-        shape=box
-        fillcolor="#BFDBFE"
-        color="#2563EB"
-        penwidth=1.8
-    ];
-
-    HostedInfra [
-        label="Mistral-managed\ninference infrastructure\n(provider unspecified)"
-        shape=cylinder
-        fillcolor="#515151"
-        fontcolor="#FFFFFF"
-        color="#515151"
-        width=2.5
-    ];
-
-    APIUsers [
-        label="API customers"
-        shape=box
-        fillcolor="#D1FAE5"
-    ];
-
-    // ========================================
-    // UPSTREAM RELATIONSHIPS
-    // ========================================
-
-    CoreWeave -> CoreWeaveGPU [
-        label="Provides"
-        color="#B45309"
-    ];
-
-    CINECA -> Leonardo [
-        label="Operates"
-        color="#B45309"
-    ];
-
-    CoreWeaveGPU -> Mistral [
-        label="Contracted GPU capacity\n(2023)"
-        color="#B45309"
-    ];
-
-    Leonardo -> Mistral [
-        label="Computing resources\nand assistance"
-        color="#B45309"
-    ];
-
-    // ========================================
-    // OPEN-WEIGHT RELATIONSHIPS
-    // ========================================
-
-    Mistral -> Mistral7B [
-        label="Develops and releases"
-        color="#2563EB"
-    ];
-
-    Mistral -> Mixtral [
-        label="Develops and releases"
-        color="#2563EB"
-    ];
-
-    Mistral7B -> OpenUsers [
-        label="Downloadable weights"
-        color="#059669"
-        style=dotted
-        penwidth=2
-    ];
-
-    Mixtral -> OpenUsers [
-        label="Downloadable weights"
-        color="#059669"
-        style=dotted
-        penwidth=2
-    ];
-
-    OpenUsers -> SelfManaged [
-        label="Can independently deploy on"
-        color="#059669"
-        style=dotted
-        penwidth=2
-    ];
-
-    // ========================================
-    // HOSTED INFERENCE RELATIONSHIPS
-    // ========================================
-
-    Mistral -> Platform [
-        label="Introduces hosted API"
-        color="#2563EB"
-    ];
-
-    Platform -> HostedInfra [
-        label="Operates inference service"
-        color="#2563EB"
-    ];
-
-    HostedInfra -> APIUsers [
-        label="Hosted model inference\nvia API"
-        color="#2563EB"
-    ];
-
-    // ========================================
-    // NETWORK LAYOUT
-    // ========================================
-
-    { rank=same; CoreWeave; CINECA; }
-    { rank=same; CoreWeaveGPU; Leonardo; }
-
-    { rank=same; Mistral7B; Mixtral; Platform; }
-
-    { rank=same; OpenUsers; HostedInfra; }
-
-    { rank=same; SelfManaged; APIUsers; }
-
-    CoreWeave -> CINECA [
-        style=invis
-        weight=10
-    ];
-
-    CoreWeaveGPU -> Leonardo [
-        style=invis
-        weight=10
-    ];
-
-    Mistral7B -> Mixtral [
-        style=invis
-        weight=10
-    ];
-
-    Mixtral -> Platform [
-        style=invis
-        weight=10
-    ];
-
-    OpenUsers -> HostedInfra [
-        style=invis
-        weight=5
-    ];
-
-    SelfManaged -> APIUsers [
-        style=invis
-        weight=5
-    ];
-
-    // ========================================
-    // SIDEBAR LEGEND
-    // ========================================
-
-    Legend [
-        shape=plain
-        style=""
-        margin=0
-        label=<
-            <TABLE BORDER="0"
-                   CELLBORDER="0"
-                   CELLSPACING="3"
-                   CELLPADDING="3">
-
-                <TR>
-                    <TD COLSPAN="3" ALIGN="LEFT">
-                        <FONT FACE="Bitter"><B>LEGEND</B></FONT>
-                    </TD>
-                </TR>
-
-                <TR>
-                    <TD COLSPAN="3" ALIGN="LEFT">
-                        <FONT FACE="Bitter"><B>Nodes</B></FONT>
-                    </TD>
-                </TR>
-
-                <TR>
-                    <TD BGCOLOR="#BFDBFE" WIDTH="16" HEIGHT="14"></TD>
-                    <TD COLSPAN="2" ALIGN="LEFT">
-                        <FONT FACE="Bitter">Mistral AI / service</FONT>
-                    </TD>
-                </TR>
-
-                <TR>
-                    <TD BGCOLOR="#E5E7EB"></TD>
-                    <TD COLSPAN="2" ALIGN="LEFT">
-                        <FONT FACE="Bitter">External provider</FONT>
-                    </TD>
-                </TR>
-
-                <TR>
-                    <TD BGCOLOR="#515151"></TD>
-                    <TD COLSPAN="2" ALIGN="LEFT">
-                        <FONT FACE="Bitter">Infrastructure</FONT>
-                    </TD>
-                </TR>
-
-                <TR>
-                    <TD BGCOLOR="#FEF3C7"></TD>
-                    <TD COLSPAN="2" ALIGN="LEFT">
-                        <FONT FACE="Bitter">Model / artifact</FONT>
-                    </TD>
-                </TR>
-
-                <TR>
-                    <TD BGCOLOR="#D1FAE5"></TD>
-                    <TD COLSPAN="2" ALIGN="LEFT">
-                        <FONT FACE="Bitter">Users / deployment</FONT>
-                    </TD>
-                </TR>
-
-                <TR>
-                    <TD COLSPAN="3" HEIGHT="8"></TD>
-                </TR>
-
-                <TR>
-                    <TD COLSPAN="3" ALIGN="LEFT">
-                        <FONT FACE="Bitter"><B>Relationships</B></FONT>
-                    </TD>
-                </TR>
-
-                <TR>
-                    <TD COLSPAN="2" ALIGN="LEFT">
-                        <FONT FACE="Bitter" COLOR="#B45309">━━━━━━</FONT>
-                    </TD>
-                    <TD ALIGN="LEFT">
-                        <FONT FACE="Bitter">Infrastructure provision</FONT>
-                    </TD>
-                </TR>
-
-                <TR>
-                    <TD COLSPAN="2" ALIGN="LEFT">
-                        <FONT FACE="Bitter" COLOR="#2563EB">━━━━━━</FONT>
-                    </TD>
-                    <TD ALIGN="LEFT">
-                        <FONT FACE="Bitter">Model / service provision</FONT>
-                    </TD>
-                </TR>
-
-                <TR>
-                    <TD COLSPAN="2" ALIGN="LEFT">
-                        <FONT FACE="Bitter" COLOR="#059669">············</FONT>
-                    </TD>
-                    <TD ALIGN="LEFT">
-                        <FONT FACE="Bitter">Deployment capability*</FONT>
-                    </TD>
-                </TR>
-
-                <TR>
-                    <TD COLSPAN="3" HEIGHT="6"></TD>
-                </TR>
-
-                <TR>
-                    <TD COLSPAN="3" ALIGN="LEFT">
-                        <FONT FACE="Bitter" POINT-SIZE="9" COLOR="#555555">
-                            * Capability does not imply actual deployment.
-                        </FONT>
-                    </TD>
-                </TR>
-
-            </TABLE>
-        >
-    ];
-
-    // ========================================
-    // LEGEND POSITIONING
-    // ========================================
-
-    { rank=same; CoreWeaveGPU; Leonardo; Legend; }
-
-    Leonardo -> Legend [
-        style=invis
-        weight=0
-        minlen=2
-        constraint=false
-    ];
-
+    CoreWeave -> H100 [label="Provides", color="#B45309", color="#B9B9B9", fontcolor="#888888"];
+    CINECA -> Leonardo [label="Operates", color="#B45309", color="#B9B9B9", fontcolor="#888888"];
+    H100 -> Mistral [label="Contracted GPU capacity (2023)", color="#B45309", color="#B9B9B9", fontcolor="#888888"];
+    Leonardo -> Mistral [label="Computing resources and assistance", color="#B45309", color="#B9B9B9", fontcolor="#888888"];
+    Mistral -> Mistral7B [label="Develops and releases", color="#2563EB"];
+    Mistral -> Mixtral [label="Develops and releases", color="#2563EB"];
+    Mistral7B -> OpenUsers [label="Downloadable weights", color="#059669", style=dotted, penwidth=2];
+    Mixtral -> OpenUsers [label="Downloadable weights", color="#059669", style=dotted, penwidth=2];
+    OpenUsers -> SelfManaged [label="Option to self-deploy", color="#059669", style=dotted, penwidth=2];
+    Mistral -> Platform [label="Introduces hosted API", color="#2563EB"];
+    Platform -> Hosted [label="Operates inference service", color="#2563EB"];
+    Hosted -> APIUsers [label="Hosted model inference\nvia API", color="#2563EB"];
+    Enix -> Hosted [label="Inference engineering\nand operations", color="#2563EB"];
+    AzureCloud -> Hosted [label="Probable cloud infrastructure", color="#B45309", color="#B9B9B9", fontcolor="#888888"];
+    GoogleCloud -> Hosted [label="Probable cloud infrastructure", color="#B45309", color="#B9B9B9", fontcolor="#888888"];
+    // ** 50% opacity in the submitted figure: inferred / probable relationship.
 }

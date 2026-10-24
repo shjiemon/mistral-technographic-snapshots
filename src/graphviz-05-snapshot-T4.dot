@@ -1,735 +1,91 @@
 digraph Mistral_T4 {
+    // ========================================
+    // GRAPH SETTINGS — consistent with original DOT files
+    // ========================================
+    graph [label="T₄ — Mistral AI Infrastructure Ecosystem (October 2026)", labelloc=t, fontsize=19, fontname="Bitter", rankdir=TB, bgcolor="white", nodesep=0.55, ranksep=0.55, splines=polyline, pad=0.35, outputorder=edgesfirst, newrank=true];
+    node [fontname="Bitter", fontsize=11, style=filled, color="#555555", fontcolor="#111111", penwidth=1.2, margin="0.16,0.10"];
+    edge [fontname="Bitter", fontsize=9, arrowsize=0.75, penwidth=1.5];
 
     // ========================================
-    // GRAPH SETTINGS
+    // NODES — corresponding to submitted diagram
     // ========================================
-
-    graph [
-        label="T₄ — Mistral AI Infrastructure Ecosystem (October 2026)"
-        labelloc=t
-        fontsize=19
-        fontname="Bitter"
-        rankdir=TB
-        bgcolor="white"
-        nodesep=0.65
-        ranksep=0.55
-        splines=polyline
-        pad=0.35
-        outputorder=edgesfirst
-        newrank=true
-    ];
-
-    node [
-        fontname="Bitter"
-        fontsize=11
-        style=filled
-        color="#555555"
-        fontcolor="#111111"
-        penwidth=1.2
-        margin="0.16,0.10"
-    ];
-
-    edge [
-        fontname="Bitter"
-        fontsize=9
-        arrowsize=0.75
-        penwidth=1.5
-    ];
+    DataPartners [label="External data-centre\nfacility partners", shape=box, fillcolor="#E5E7EB"];
+    EuropeanFacilities [label="European data-centre\nfacilities", shape=cylinder, fillcolor="#515151", fontcolor="white", color="#515151"];
+    NVIDIA [label="NVIDIA", shape=box, fillcolor="#E5E7EB"];
+    Blackwell [label="NVIDIA Grace Blackwell\nGPU hardware", shape=cylinder, fillcolor="#515151", fontcolor="white", color="#515151"];
+    Operated [label="Mistral-operated\nGPU compute infrastructure", shape=cylinder, fillcolor="#515151", fontcolor="white", color="#515151"];
+    CoreWeave [label="CoreWeave**", shape=box, fillcolor="#E5E7EB", color="#B7B7B7", fontcolor="#888888", fillcolor="#F1F1F1"];
+    GB200 [label="NVIDIA GB200\nGPU infrastructure", shape=cylinder, fillcolor="#515151", fontcolor="white", color="#515151", color="#B7B7B7", fontcolor="#888888", fillcolor="#F1F1F1"];
+    Microsoft [label="Microsoft Azure", shape=box, fillcolor="#E5E7EB"];
+    AzureCompute [label="Azure supercomputing\ninfrastructure", shape=cylinder, fillcolor="#515151", fontcolor="white", color="#515151"];
+    Eco [label="EcoDataCenter", shape=box, fillcolor="#E5E7EB"];
+    Sweden [label="Swedish AI data centre\nPlanned for 2027", shape=cylinder, fillcolor="#515151", fontcolor="white", color="#515151", style="dashed,filled", color="#B45309", fontcolor="#B45309", fillcolor="#FFF7ED"];
+    Mistral [label="Mistral AI", shape=box, fillcolor="#BFDBFE", color="#2563EB", penwidth=2];
+    OpenUsers [label="Model users /\ndeployers", shape=box, fillcolor="#D1FAE5"];
+    SelfManaged [label="Self-managed deployment\n(Local / private / third-party cloud)", shape=cylinder, fillcolor="#D1FAE5"];
+    Compute [label="Mistral Compute\nOperational services (2026)", shape=box, fillcolor="#BFDBFE", color="#2563EB", penwidth=2];
+    Large4 [label="Mistral Large 4\nOctober 2026", shape=box, fillcolor="#FEF3C7", style="rounded,filled"];
+    ComputeUsers [label="Compute customers", shape=box, fillcolor="#D1FAE5"];
+    Regional [label="Regional inference\nEuropean endpoints (GA)", shape=box, fillcolor="#BFDBFE", color="#2563EB", penwidth=2];
+    Platform [label="La Plateforme\nHosted API", shape=box, fillcolor="#BFDBFE", color="#2563EB", penwidth=2];
+    APIUsers [label="API customers", shape=box, fillcolor="#D1FAE5"];
+    Proprietary [label="Proprietary / hosted\nmodel families", shape=box, fillcolor="#FEF3C7", style="rounded,filled"];
+    OpenModels [label="Open-weight models\nMistral model families", shape=box, fillcolor="#FEF3C7", style="rounded,filled"];
+    Bedrock [label="Amazon Bedrock\nManaged inference", shape=box, fillcolor="#E5E7EB"];
+    AzureAI [label="Microsoft Azure AI\nManaged inference", shape=box, fillcolor="#E5E7EB"];
+    Vertex [label="Google Vertex AI\nManaged MaaS", shape=box, fillcolor="#E5E7EB"];
+    CloudUsers [label="Hyperscaler\ncloud customers", shape=box, fillcolor="#D1FAE5"];
+    Enterprise [label="Enterprise AI systems\nLe Chat Enterprise / Mistral Code", shape=box, fillcolor="#BFDBFE", color="#2563EB", penwidth=2];
+    Studio [label="AI Studio\nEnterprise operational tooling", shape=box, fillcolor="#BFDBFE", color="#2563EB", penwidth=2];
+    EnterpriseUsers [label="Enterprise customers", shape=box, fillcolor="#D1FAE5"];
+    EnterpriseDeployment [label="Enterprise-controlled deployment\n(Private / hybrid / on-premises)", shape=cylinder, fillcolor="#D1FAE5"];
 
     // ========================================
-    // EXTERNAL COMPUTE PROVIDERS
+    // RELATIONSHIPS — indexed by Google Sheet evidence register
+    // Blue = service; orange = infrastructure; green dotted = capability.
+    // Faded = inferred / historical; orange dashed = planned.
+    // Capability does not imply observed customer deployment.
     // ========================================
-
-    CoreWeave [
-        label="CoreWeave"
-        shape=box
-        fillcolor="#E5E7EB"
-    ];
-
-    CINECA [
-        label="CINECA / EuroHPC"
-        shape=box
-        fillcolor="#E5E7EB"
-    ];
-
-    Microsoft [
-        label="Microsoft Azure"
-        shape=box
-        fillcolor="#E5E7EB"
-    ];
-
-    CoreWeaveGPU [
-        label="NVIDIA H100\nGPU infrastructure"
-        shape=cylinder
-        fillcolor="#515151"
-        fontcolor="#FFFFFF"
-        color="#515151"
-    ];
-
-    Leonardo [
-        label="Leonardo\nsupercomputer"
-        shape=cylinder
-        fillcolor="#515151"
-        fontcolor="#FFFFFF"
-        color="#515151"
-    ];
-
-    AzureCompute [
-        label="Azure supercomputing\ninfrastructure"
-        shape=cylinder
-        fillcolor="#515151"
-        fontcolor="#FFFFFF"
-        color="#515151"
-    ];
-
-    // ========================================
-    // MISTRAL
-    // ========================================
-
-    Mistral [
-        label="Mistral AI"
-        shape=box
-        fillcolor="#BFDBFE"
-        color="#2563EB"
-        penwidth=2
-    ];
-
-    // ========================================
-    // NEW: MISTRAL-OPERATED COMPUTE
-    // ========================================
-
-    NVIDIA [
-        label="NVIDIA"
-        shape=box
-        fillcolor="#E5E7EB"
-    ];
-
-    DataCentrePartners [
-        label="External data-centre\nfacility partners"
-        shape=box
-        fillcolor="#E5E7EB"
-    ];
-
-    Blackwell [
-        label="NVIDIA Grace Blackwell\nGPU hardware"
-        shape=cylinder
-        fillcolor="#515151"
-        fontcolor="#FFFFFF"
-        color="#515151"
-    ];
-
-    EuropeanFacilities [
-        label="European data-centre\nfacilities"
-        shape=cylinder
-        fillcolor="#515151"
-        fontcolor="#FFFFFF"
-        color="#515151"
-    ];
-
-    MistralCompute [
-        label="Mistral Compute\nOperational services (2026)"
-        shape=box
-        fillcolor="#BFDBFE"
-        color="#2563EB"
-        penwidth=2
-    ];
-
-    OperatedCompute [
-        label="Mistral-operated\nGPU compute infrastructure"
-        shape=cylinder
-        fillcolor="#515151"
-        fontcolor="#FFFFFF"
-        color="#515151"
-        penwidth=2
-    ];
-
-    ComputeCustomers [
-        label="Compute customers"
-        shape=box
-        fillcolor="#D1FAE5"
-    ];
-
-    // ========================================
-    // FUTURE INFRASTRUCTURE
-    // ========================================
-
-    EcoDataCenter [
-        label="EcoDataCenter"
-        shape=box
-        fillcolor="#E5E7EB"
-    ];
-
-    SwedenProject [
-        label="Swedish AI data centre\nPlanned for 2027"
-        shape=cylinder
-        style="filled,dashed"
-        fillcolor="#FFF7ED"
-        color="#B45309"
-        fontcolor="#92400E"
-        penwidth=2
-    ];
-
-    // ========================================
-    // MODELS
-    // ========================================
-
-    OpenModels [
-        label="Open-weight models\nMistral model families"
-        shape=box
-        style="rounded,filled"
-        fillcolor="#FEF3C7"
-    ];
-
-    ProprietaryModels [
-        label="Proprietary / hosted\nmodel families"
-        shape=box
-        style="rounded,filled"
-        fillcolor="#FEF3C7"
-    ];
-
-    Large4 [
-        label="Mistral Large 4\nOctober 2026"
-        shape=box
-        style="rounded,filled"
-        fillcolor="#FEF3C7"
-        penwidth=1.8
-    ];
-
-    // ========================================
-    // OPEN-WEIGHT DEPLOYMENT
-    // ========================================
-
-    OpenUsers [
-        label="Model users /\ndeployers"
-        shape=box
-        fillcolor="#D1FAE5"
-    ];
-
-    SelfManaged [
-        label="Self-managed deployment\n(Local / private / third-party cloud)"
-        shape=cylinder
-        fillcolor="#D1FAE5"
-    ];
-
-    // ========================================
-    // MISTRAL-MANAGED INFERENCE
-    // ========================================
-
-    Platform [
-        label="La Plateforme\nHosted API"
-        shape=box
-        fillcolor="#BFDBFE"
-        color="#2563EB"
-    ];
-
-    RegionalInference [
-        label="Regional inference\nEuropean endpoints (GA)"
-        shape=box
-        fillcolor="#BFDBFE"
-        color="#2563EB"
-    ];
-
-    APIUsers [
-        label="API customers"
-        shape=box
-        fillcolor="#D1FAE5"
-    ];
-
-    // ========================================
-    // HYPERSCALER DISTRIBUTION
-    // ========================================
-
-    AzureAI [
-        label="Azure AI\nManaged inference"
-        shape=box
-        fillcolor="#E5E7EB"
-    ];
-
-    Bedrock [
-        label="Amazon Bedrock\nManaged inference"
-        shape=box
-        fillcolor="#E5E7EB"
-    ];
-
-    Vertex [
-        label="Google Vertex AI\nManaged MaaS"
-        shape=box
-        fillcolor="#E5E7EB"
-    ];
-
-    CloudUsers [
-        label="Hyperscaler\ncloud customers"
-        shape=box
-        fillcolor="#D1FAE5"
-    ];
-
-    // ========================================
-    // ENTERPRISE SYSTEMS
-    // ========================================
-
-    EnterpriseProducts [
-        label="Enterprise AI systems\nLe Chat Enterprise / Mistral Code"
-        shape=box
-        fillcolor="#BFDBFE"
-        color="#2563EB"
-    ];
-
-    AIStudio [
-        label="AI Studio\nEnterprise operational tooling"
-        shape=box
-        fillcolor="#BFDBFE"
-        color="#2563EB"
-    ];
-
-    EnterpriseUsers [
-        label="Enterprise customers"
-        shape=box
-        fillcolor="#D1FAE5"
-    ];
-
-    PrivateDeployment [
-        label="Enterprise-controlled deployment\n(Private / hybrid / on-premises)"
-        shape=cylinder
-        fillcolor="#D1FAE5"
-    ];
-
-    // ========================================
-    // EXISTING UPSTREAM RELATIONSHIPS
-    // ========================================
-
-    CoreWeave -> CoreWeaveGPU [
-        label="Provides"
-        color="#B45309"
-    ];
-
-    CINECA -> Leonardo [
-        label="Operates"
-        color="#B45309"
-    ];
-
-    Microsoft -> AzureCompute [
-        label="Provides"
-        color="#B45309"
-    ];
-
-    CoreWeaveGPU -> Mistral [
-        label="Contracted GPU capacity\n(2023)"
-        color="#B45309"
-    ];
-
-    Leonardo -> Mistral [
-        label="Computing resources\nand assistance (2023)"
-        color="#B45309"
-    ];
-
-    AzureCompute -> Mistral [
-        label="Supercomputing access\n(2024 partnership)"
-        color="#B45309"
-    ];
-
-    // ========================================
-    // NEW COMPUTE RELATIONSHIPS
-    // ========================================
-
-    NVIDIA -> Blackwell [
-        label="Supplies hardware"
-        color="#B45309"
-    ];
-
-    DataCentrePartners -> EuropeanFacilities [
-        label="Provide facilities"
-        color="#B45309"
-    ];
-
-    Blackwell -> OperatedCompute [
-        label="Hardware dependency"
-        color="#B45309"
-    ];
-
-    EuropeanFacilities -> OperatedCompute [
-        label="Facility dependency"
-        color="#B45309"
-    ];
-
-    Mistral -> MistralCompute [
-        label="Operates compute service"
-        color="#2563EB"
-    ];
-
-    MistralCompute -> OperatedCompute [
-        label="Operates GPU capacity"
-        color="#2563EB"
-    ];
-
-    OperatedCompute -> ComputeCustomers [
-        label="Compute services\n(2026)"
-        color="#2563EB"
-    ];
-
-    // Expanded Microsoft relationship:
-    // Mistral contributes GPU capacity.
-
-    OperatedCompute -> AzureAI [
-        label="GPU capacity contribution\n(2026 partnership)"
-        color="#2563EB"
-        constraint=false
-    ];
-
-    // ========================================
-    // ANNOUNCED FUTURE FACILITY
-    // ========================================
-
-    EcoDataCenter -> SwedenProject [
-        label="Planned facility partnership"
-        color="#B45309"
-        style=dashed
-    ];
-
-    Mistral -> SwedenProject [
-        label="Announced expansion\n(February 2026)"
-        color="#B45309"
-        style=dashed
-        constraint=false
-    ];
-
-    // ========================================
-    // MODEL DEVELOPMENT
-    // ========================================
-
-    Mistral -> OpenModels [
-        label="Develops and releases"
-        color="#2563EB"
-    ];
-
-    Mistral -> ProprietaryModels [
-        label="Develops and offers"
-        color="#2563EB"
-    ];
-
-    Mistral -> Large4 [
-        label="Develops and releases"
-        color="#2563EB"
-    ];
-
-    // Evidence of Mistral-operated training
-    // and inference capacity.
-
-    OperatedCompute -> Large4 [
-        label="Training: 3,800 Blackwell GPUs\n(company-reported)"
-        color="#B45309"
-        constraint=false
-    ];
-
-    // ========================================
-    // OPEN-WEIGHT ACCESS
-    // ========================================
-
-    OpenModels -> OpenUsers [
-        label="Downloadable weights"
-        color="#059669"
-        style=dotted
-        penwidth=2
-    ];
-
-    OpenUsers -> SelfManaged [
-        label="Can independently deploy on"
-        color="#059669"
-        style=dotted
-        penwidth=2
-    ];
-
-    // ========================================
-    // MISTRAL-HOSTED API
-    // ========================================
-
-    Mistral -> Platform [
-        label="Operates hosted API"
-        color="#2563EB"
-    ];
-
-    Platform -> APIUsers [
-        label="Hosted inference"
-        color="#2563EB"
-    ];
-
-    Mistral -> RegionalInference [
-        label="Offers regional endpoints"
-        color="#2563EB"
-    ];
-
-    OperatedCompute -> RegionalInference [
-        label="European compute capacity"
-        color="#2563EB"
-        constraint=false
-    ];
-
-    RegionalInference -> APIUsers [
-        label="Region-specific inference"
-        color="#2563EB"
-    ];
-
-    // ========================================
-    // HYPERSCALER DISTRIBUTION
-    // ========================================
-
-    ProprietaryModels -> AzureAI [
-        label="Managed model access"
-        color="#2563EB"
-    ];
-
-    OpenModels -> Bedrock [
-        label="Model availability"
-        color="#2563EB"
-    ];
-
-    ProprietaryModels -> Bedrock [
-        color="#2563EB"
-    ];
-
-    ProprietaryModels -> Vertex [
-        label="Managed MaaS"
-        color="#2563EB"
-    ];
-
-    AzureAI -> CloudUsers [
-        color="#2563EB"
-    ];
-
-    Bedrock -> CloudUsers [
-        color="#2563EB"
-    ];
-
-    Vertex -> CloudUsers [
-        color="#2563EB"
-    ];
-
-    // ========================================
-    // ENTERPRISE SYSTEMS
-    // ========================================
-
-    Mistral -> EnterpriseProducts [
-        label="Offers enterprise systems"
-        color="#2563EB"
-    ];
-
-    Mistral -> AIStudio [
-        label="Offers operational tooling"
-        color="#2563EB"
-    ];
-
-    EnterpriseProducts -> EnterpriseUsers [
-        label="Enterprise AI access"
-        color="#2563EB"
-    ];
-
-    AIStudio -> EnterpriseUsers [
-        label="Development / operations"
-        color="#2563EB"
-    ];
-
-    EnterpriseUsers -> PrivateDeployment [
-        label="Private / hybrid deployment options"
-        color="#059669"
-        style=dotted
-        penwidth=2
-    ];
-
-    // ========================================
-    // LAYOUT
-    // ========================================
-
-    {
-        rank=same;
-        CoreWeave;
-        CINECA;
-        Microsoft;
-        NVIDIA;
-        DataCentrePartners;
-        EcoDataCenter;
-    }
-
-    {
-        rank=same;
-        CoreWeaveGPU;
-        Leonardo;
-        AzureCompute;
-        Blackwell;
-        EuropeanFacilities;
-        SwedenProject;
-    }
-
-    {
-        rank=same;
-        OpenModels;
-        ProprietaryModels;
-        Large4;
-        Platform;
-        RegionalInference;
-        EnterpriseProducts;
-        AIStudio;
-        MistralCompute;
-    }
-
-    {
-        rank=same;
-        OpenUsers;
-        AzureAI;
-        Bedrock;
-        Vertex;
-        EnterpriseUsers;
-    }
-
-    {
-        rank=same;
-        SelfManaged;
-        CloudUsers;
-        APIUsers;
-        PrivateDeployment;
-        ComputeCustomers;
-    }
-
-    // ========================================
-    // LEGEND
-    // ========================================
-
-    Legend [
-        shape=plain
-        style=""
-        margin=0
-        label=<
-            <TABLE BORDER="0"
-                   CELLBORDER="0"
-                   CELLSPACING="3"
-                   CELLPADDING="3">
-
-                <TR>
-                    <TD COLSPAN="3" ALIGN="LEFT">
-                        <FONT FACE="Bitter"><B>LEGEND</B></FONT>
-                    </TD>
-                </TR>
-
-                <TR>
-                    <TD COLSPAN="3" ALIGN="LEFT">
-                        <FONT FACE="Bitter"><B>Nodes</B></FONT>
-                    </TD>
-                </TR>
-
-                <TR>
-                    <TD BGCOLOR="#BFDBFE" WIDTH="16" HEIGHT="14"></TD>
-                    <TD COLSPAN="2" ALIGN="LEFT">
-                        <FONT FACE="Bitter">Mistral AI / service</FONT>
-                    </TD>
-                </TR>
-
-                <TR>
-                    <TD BGCOLOR="#E5E7EB"></TD>
-                    <TD COLSPAN="2" ALIGN="LEFT">
-                        <FONT FACE="Bitter">External provider</FONT>
-                    </TD>
-                </TR>
-
-                <TR>
-                    <TD BGCOLOR="#515151"></TD>
-                    <TD COLSPAN="2" ALIGN="LEFT">
-                        <FONT FACE="Bitter">Computing infrastructure</FONT>
-                    </TD>
-                </TR>
-
-                <TR>
-                    <TD BGCOLOR="#FEF3C7"></TD>
-                    <TD COLSPAN="2" ALIGN="LEFT">
-                        <FONT FACE="Bitter">Model / artifact</FONT>
-                    </TD>
-                </TR>
-
-                <TR>
-                    <TD BGCOLOR="#D1FAE5"></TD>
-                    <TD COLSPAN="2" ALIGN="LEFT">
-                        <FONT FACE="Bitter">Users / deployment</FONT>
-                    </TD>
-                </TR>
-
-                <TR>
-                    <TD COLSPAN="3" HEIGHT="8"></TD>
-                </TR>
-
-                <TR>
-                    <TD COLSPAN="3" ALIGN="LEFT">
-                        <FONT FACE="Bitter"><B>Relationships</B></FONT>
-                    </TD>
-                </TR>
-
-                <TR>
-                    <TD COLSPAN="2" ALIGN="LEFT">
-                        <FONT FACE="Bitter" COLOR="#B45309">━━━━━━</FONT>
-                    </TD>
-                    <TD ALIGN="LEFT">
-                        <FONT FACE="Bitter">Compute provision / access</FONT>
-                    </TD>
-                </TR>
-
-                <TR>
-                    <TD COLSPAN="2" ALIGN="LEFT">
-                        <FONT FACE="Bitter" COLOR="#2563EB">━━━━━━</FONT>
-                    </TD>
-                    <TD ALIGN="LEFT">
-                        <FONT FACE="Bitter">Model / service provision</FONT>
-                    </TD>
-                </TR>
-
-                <TR>
-                    <TD COLSPAN="2" ALIGN="LEFT">
-                        <FONT FACE="Bitter" COLOR="#059669">············</FONT>
-                    </TD>
-                    <TD ALIGN="LEFT">
-                        <FONT FACE="Bitter">Deployment capability*</FONT>
-                    </TD>
-                </TR>
-
-                <TR>
-                    <TD COLSPAN="2" ALIGN="LEFT">
-                        <FONT FACE="Bitter" COLOR="#B45309">- - - - - -</FONT>
-                    </TD>
-                    <TD ALIGN="LEFT">
-                        <FONT FACE="Bitter">Announced initiative</FONT>
-                    </TD>
-                </TR>
-
-                <TR>
-                    <TD COLSPAN="3" HEIGHT="6"></TD>
-                </TR>
-
-                <TR>
-                    <TD COLSPAN="3" ALIGN="LEFT">
-                        <FONT FACE="Bitter"
-                              POINT-SIZE="9"
-                              COLOR="#555555">
-                            * Capability does not imply actual deployment.
-                        </FONT>
-                    </TD>
-                </TR>
-
-            </TABLE>
-        >
-    ];
-
-    // ========================================
-    // LEGEND POSITIONING
-    // ========================================
-
-    {
-        rank=same;
-        CoreWeaveGPU;
-        Leonardo;
-        AzureCompute;
-        Blackwell;
-        EuropeanFacilities;
-        Legend;
-    }
-
-    EuropeanFacilities -> Legend [
-        style=invis
-        weight=10
-    ];
-
+    DataPartners -> EuropeanFacilities [label="Provide facilities", color="#B45309"];
+    EuropeanFacilities -> Operated [label="Facility dependency", color="#B45309"];
+    NVIDIA -> Blackwell [label="Supplies hardware", color="#B45309"];
+    Blackwell -> Operated [label="Hardware dependency", color="#B45309"];
+    CoreWeave -> GB200 [label="Provides", color="#B45309", color="#B9B9B9", fontcolor="#888888"];
+    GB200 -> Mistral [label="Contracted GPU capacity", color="#B45309", color="#B9B9B9", fontcolor="#888888"];
+    Microsoft -> AzureCompute [label="Provides", color="#B45309"];
+    AzureCompute -> Mistral [label="Supercomputing access\n(February 2024)", color="#B45309"];
+    Operated -> Microsoft [label="Mistral supplies GPU capacity to Azure (2026)", color="#B45309", constraint=false];
+    Eco -> Sweden [label="Planned facility partnership", color="#B45309", style=dashed];
+    Mistral -> Sweden [label="Announced expansion\n(February 2026)", color="#B45309", style=dashed];
+    Mistral -> Compute [label="Offers compute service", color="#2563EB"];
+    Compute -> Operated [label="Operates GPU infrastructure", color="#2563EB"];
+    Operated -> Compute [label="Powers compute services", color="#B45309"];
+    Compute -> ComputeUsers [label="Compute services (2026)", color="#2563EB"];
+    Operated -> Large4 [label="Training: 3,800 Blackwell GPUs\n(company-reported)", color="#B45309"];
+    Mistral -> Large4 [label="Develops and releases", color="#2563EB"];
+    Large4 -> ComputeUsers [label="Compute services (2026)", color="#2563EB"];
+    Mistral -> Regional [label="Offers regional endpoints", color="#2563EB"];
+    Operated -> Regional [label="European compute capacity", color="#2563EB"];
+    Regional -> APIUsers [label="Region-specific inference", color="#2563EB"];
+    Mistral -> Platform [label="Operates hosted API", color="#2563EB"];
+    Platform -> APIUsers [label="Hosted inference", color="#2563EB"];
+    Mistral -> Proprietary [label="Develops and offers", color="#2563EB"];
+    Mistral -> OpenModels [label="Develops and releases", color="#2563EB"];
+    Proprietary -> Vertex [label="Managed MaaS", color="#2563EB"];
+    Proprietary -> AzureAI [label="Managed model access", color="#2563EB"];
+    Proprietary -> Bedrock [label="Managed model access", color="#2563EB"];
+    OpenModels -> Bedrock [label="Model availability", color="#2563EB"];
+    Vertex -> CloudUsers [color="#2563EB"];
+    AzureAI -> CloudUsers [color="#2563EB"];
+    Bedrock -> CloudUsers [color="#2563EB"];
+    OpenModels -> OpenUsers [label="Downloadable weights", color="#059669", style=dotted, penwidth=2];
+    OpenUsers -> SelfManaged [label="Option to self-deploy", color="#059669", style=dotted, penwidth=2];
+    Mistral -> Enterprise [label="Offers enterprise systems", color="#2563EB"];
+    Mistral -> Studio [label="Offers operational tooling", color="#2563EB"];
+    Enterprise -> EnterpriseUsers [label="Enterprise AI access", color="#2563EB"];
+    Studio -> EnterpriseUsers [label="Development / operations", color="#2563EB"];
+    EnterpriseUsers -> EnterpriseDeployment [label="Private / hybrid deployment options", color="#059669", style=dotted, penwidth=2];
+    // The external facility-partner relationship is INFERRED, not a confirmed contract.
+    // ML4 -> compute customers is a diagrammed service capability, not observed ML4 adoption.
+    // Swedish facility is planned for 2027, not operational at T₄.
 }

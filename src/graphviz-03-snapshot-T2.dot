@@ -1,0 +1,61 @@
+digraph Mistral_T2 {
+    // ========================================
+    // GRAPH SETTINGS — consistent with original DOT files
+    // ========================================
+    graph [label="T₂ — Mistral AI Infrastructure Ecosystem (July 2024)", labelloc=t, fontsize=19, fontname="Bitter", rankdir=TB, bgcolor="white", nodesep=0.55, ranksep=0.55, splines=polyline, pad=0.35, outputorder=edgesfirst, newrank=true];
+    node [fontname="Bitter", fontsize=11, style=filled, color="#555555", fontcolor="#111111", penwidth=1.2, margin="0.16,0.10"];
+    edge [fontname="Bitter", fontsize=9, arrowsize=0.75, penwidth=1.5];
+
+    // ========================================
+    // NODES — corresponding to submitted diagram
+    // ========================================
+    CoreWeave [label="CoreWeave**", shape=box, fillcolor="#E5E7EB", color="#B7B7B7", fontcolor="#888888", fillcolor="#F1F1F1"];
+    H100 [label="NVIDIA H100\nGPU infrastructure", shape=cylinder, fillcolor="#515151", fontcolor="white", color="#515151", color="#B7B7B7", fontcolor="#888888", fillcolor="#F1F1F1"];
+    Microsoft [label="Microsoft Azure", shape=box, fillcolor="#E5E7EB"];
+    AzureCompute [label="Azure supercomputing\ninfrastructure", shape=cylinder, fillcolor="#515151", fontcolor="white", color="#515151"];
+    Mistral [label="Mistral AI", shape=box, fillcolor="#BFDBFE", color="#2563EB", penwidth=2];
+    OpenUsers [label="Model users /\ndeployers", shape=box, fillcolor="#D1FAE5"];
+    SelfManaged [label="Self-managed deployment\n(Local / private / third-party cloud)", shape=cylinder, fillcolor="#D1FAE5"];
+    OpenModels [label="Open-weight models\nMistral 7B / Mixtral 8x7B\nMistral NeMo (July 2024)", shape=box, fillcolor="#FEF3C7", style="rounded,filled"];
+    Proprietary [label="Mistral Large / Large 2\nProprietary models", shape=box, fillcolor="#FEF3C7", style="rounded,filled"];
+    Platform [label="La Plateforme\nHosted API", shape=box, fillcolor="#BFDBFE", color="#2563EB", penwidth=2];
+    Hosted [label="Mistral-managed\ninference infrastructure", shape=cylinder, fillcolor="#515151", fontcolor="white", color="#515151"];
+    APIUsers [label="La Plateforme\nAPI customers", shape=box, fillcolor="#D1FAE5"];
+    Bedrock [label="Amazon Bedrock\nManaged inference", shape=box, fillcolor="#E5E7EB"];
+    AzureAI [label="Microsoft Azure AI\nManaged inference", shape=box, fillcolor="#E5E7EB"];
+    Vertex [label="Google Vertex AI\nManaged MaaS", shape=box, fillcolor="#E5E7EB"];
+    CloudUsers [label="Hyperscaler\ncloud customers", shape=box, fillcolor="#D1FAE5"];
+    Enix [label="Enix inference\nengineering and operations**", shape=box, fillcolor="#E5E7EB", color="#B7B7B7", fontcolor="#888888", fillcolor="#F1F1F1"];
+    AzureCloud [label="Microsoft Azure\nCloud Infrastructure**", shape=box, fillcolor="#E5E7EB", color="#B7B7B7", fontcolor="#888888", fillcolor="#F1F1F1"];
+    GoogleCloud [label="Google Cloud\nCloud Infrastructure**", shape=box, fillcolor="#E5E7EB", color="#B7B7B7", fontcolor="#888888", fillcolor="#F1F1F1"];
+
+    // ========================================
+    // RELATIONSHIPS — indexed by Google Sheet evidence register
+    // Blue = service; orange = infrastructure; green dotted = capability.
+    // Faded = inferred / historical; orange dashed = planned.
+    // Capability does not imply observed customer deployment.
+    // ========================================
+    CoreWeave -> H100 [label="Provides", color="#B45309", color="#B9B9B9", fontcolor="#888888"];
+    H100 -> Mistral [label="Contracted GPU capacity\n(2023)", color="#B45309", color="#B9B9B9", fontcolor="#888888"];
+    Microsoft -> AzureCompute [label="Provides", color="#B45309"];
+    AzureCompute -> Mistral [label="Supercomputing access\n(February 2024)", color="#B45309"];
+    Mistral -> OpenModels [label="Develops and releases\nopen weights", color="#2563EB"];
+    Mistral -> Proprietary [label="Develops and offers", color="#2563EB"];
+    Mistral -> Platform [label="Operates hosted API", color="#2563EB"];
+    OpenModels -> OpenUsers [label="Downloadable weights", color="#059669", style=dotted, penwidth=2];
+    OpenUsers -> SelfManaged [label="Option to self-deploy", color="#059669", style=dotted, penwidth=2];
+    OpenModels -> Bedrock [label="Mistral 7B / Mixtral\n(March 2024)", color="#2563EB"];
+    Proprietary -> Bedrock [label="Model availability", color="#2563EB"];
+    Proprietary -> AzureAI [label="Mistral Large\n(April 2024)", color="#2563EB"];
+    Proprietary -> Vertex [label="Mistral Large 2\n(July 2024)", color="#2563EB"];
+    Bedrock -> CloudUsers [color="#2563EB"];
+    AzureAI -> CloudUsers [color="#2563EB"];
+    Vertex -> CloudUsers [color="#2563EB"];
+    Platform -> Hosted [label="Provides inference service", color="#2563EB"];
+    Hosted -> APIUsers [label="Hosted model inference\nvia API", color="#2563EB"];
+    Enix -> Hosted [label="Inference engineering", color="#2563EB", color="#B9B9B9", fontcolor="#888888"];
+    AzureCloud -> Hosted [label="Probable infrastructure", color="#B45309", color="#B9B9B9", fontcolor="#888888"];
+    GoogleCloud -> Hosted [label="Probable infrastructure", color="#B45309", color="#B9B9B9", fontcolor="#888888"];
+    // AWS Trainium / Inferentia is supplementary evidence in the sheet,
+    // not a depicted T₂ relationship; it is intentionally not drawn.
+}
