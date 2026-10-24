@@ -1,442 +1,365 @@
 <?xml version="1.0" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1656pt" height="980pt" viewBox="0.00 0.00 1655.98 979.95">
-<g id="graph0" class="graph" transform="translate(80.30588796650295,857.1189261437521) scale(0.7971522406297846)" data-name="Mistral_T3">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600pt" height="691pt" viewBox="0.00 0.00 1599.90 690.75">
+<g id="graph0" class="graph" transform="translate(25.200000762939453,665.5499877929688) scale(1)" data-name="Mistral_T3">
 
-<polygon fill="white" stroke="none" points="-25.2,25.2 -25.2,-954.75 1630.78,-954.75 1630.78,25.2 -25.2,25.2"/>
-<text text-anchor="middle" x="802.79" y="-908.45" font-family="Bitter" font-size="19.00">T₃ — Mistral AI Infrastructure Ecosystem (October 2025)</text>
-<!-- CoreWeave&#45;&gt;CoreWeaveGPU -->
-<g id="edge1" class="edge" data-name="CoreWeave-&gt;CoreWeaveGPU">
+<polygon fill="white" stroke="none" points="-25.2,25.2 -25.2,-665.55 1574.7,-665.55 1574.7,25.2 -25.2,25.2" style=""/>
+<text text-anchor="middle" x="774.75" y="-619.25" font-family="Bitter" font-size="19.00" style="">T₃ — Mistral AI Infrastructure Ecosystem (October 2025)</text>
+<!-- CoreWeave&#45;&gt;GB200 -->
+<g id="edge1" class="edge" data-name="CoreWeave-&gt;GB200">
 
-<path fill="none" stroke="#b45309" stroke-width="1.5" d="M548.12,-843.63C548.12,-804.73 548.12,-709.56 548.12,-657.04"/>
-<polygon fill="#b45309" stroke="#b45309" stroke-width="1.5" points="550.75,-657.21 548.12,-649.71 545.5,-657.21 550.75,-657.21"/>
-<text text-anchor="middle" x="563.87" y="-796.95" font-family="Bitter" font-size="9.00">Provides</text>
+<path fill="none" stroke="#b45309" stroke-width="1.5" d="M916.12,-573.2C916.12,-561.77 916.12,-546.36 916.12,-532.31" style=""/>
+<polygon fill="#b45309" stroke="#b45309" stroke-width="1.5" points="918.75,-532.64 916.12,-525.14 913.5,-532.64 918.75,-532.64" style=""/>
+<text text-anchor="middle" x="931.87" y="-545.45" font-family="Bitter" font-size="9.00" style="">Provides</text>
 </g>
-<!-- CINECA&#45;&gt;Leonardo -->
-<g id="edge2" class="edge" data-name="CINECA-&gt;Leonardo">
+<!-- GB200&#45;&gt;Mistral -->
+<g id="edge2" class="edge" data-name="GB200-&gt;Mistral">
 
-<path fill="none" stroke="#b45309" stroke-width="1.5" d="M694.12,-843.63C694.12,-804.73 694.12,-709.56 694.12,-657.04"/>
-<polygon fill="#b45309" stroke="#b45309" stroke-width="1.5" points="696.75,-657.21 694.12,-649.71 691.5,-657.21 696.75,-657.21"/>
-<text text-anchor="middle" x="710.12" y="-796.95" font-family="Bitter" font-size="9.00">Operates</text>
+<path fill="none" stroke="#b45309" stroke-width="1.5" d="M919.69,-466.95C922.22,-447.84 925.15,-425.6 925.15,-425.6 925.15,-425.6 937.59,-418.83 951.83,-411.08" style=""/>
+<polygon fill="#b45309" stroke="#b45309" stroke-width="1.5" points="953.01,-413.43 958.34,-407.54 950.5,-408.82 953.01,-413.43" style=""/>
+<text text-anchor="middle" x="972.11" y="-433.7" font-family="Bitter" font-size="9.00" style="">Contracted GPU capacity</text>
 </g>
 <!-- Microsoft&#45;&gt;AzureCompute -->
 <g id="edge3" class="edge" data-name="Microsoft-&gt;AzureCompute">
 
-<path fill="none" stroke="#b45309" stroke-width="1.5" d="M848.12,-843.63C848.12,-804.73 848.12,-709.56 848.12,-657.04"/>
-<polygon fill="#b45309" stroke="#b45309" stroke-width="1.5" points="850.75,-657.21 848.12,-649.71 845.5,-657.21 850.75,-657.21"/>
-<text text-anchor="middle" x="863.87" y="-796.95" font-family="Bitter" font-size="9.00">Provides</text>
-</g>
-<!-- CoreWeaveGPU&#45;&gt;Mistral -->
-<g id="edge4" class="edge" data-name="CoreWeaveGPU-&gt;Mistral">
-
-<path fill="none" stroke="#b45309" stroke-width="1.5" d="M554.02,-592.03C565.8,-538.6 591.15,-423.65 591.15,-423.65 591.15,-423.65 621.49,-412.75 649.24,-402.78"/>
-<polygon fill="#b45309" stroke="#b45309" stroke-width="1.5" points="649.8,-405.37 655.97,-400.36 648.03,-400.42 649.8,-405.37"/>
-<text text-anchor="middle" x="638.11" y="-437.15" font-family="Bitter" font-size="9.00">Contracted GPU capacity</text>
-<text text-anchor="middle" x="638.11" y="-426.35" font-family="Bitter" font-size="9.00">(2023)</text>
-</g>
-<!-- Leonardo&#45;&gt;Mistral -->
-<g id="edge5" class="edge" data-name="Leonardo-&gt;Mistral">
-
-<path fill="none" stroke="#b45309" stroke-width="1.5" d="M694.12,-592.13C694.12,-547.72 694.12,-458.98 694.12,-414.06"/>
-<polygon fill="#b45309" stroke="#b45309" stroke-width="1.5" points="696.75,-414.17 694.12,-406.67 691.5,-414.17 696.75,-414.17"/>
-<text text-anchor="middle" x="732.49" y="-437.15" font-family="Bitter" font-size="9.00">Computing resources</text>
-<text text-anchor="middle" x="732.49" y="-426.35" font-family="Bitter" font-size="9.00">and assistance</text>
+<path fill="none" stroke="#b45309" stroke-width="1.5" d="M1072.12,-573.2C1072.12,-561.77 1072.12,-546.36 1072.12,-532.31" style=""/>
+<polygon fill="#b45309" stroke="#b45309" stroke-width="1.5" points="1074.75,-532.64 1072.12,-525.14 1069.5,-532.64 1074.75,-532.64" style=""/>
+<text text-anchor="middle" x="1087.87" y="-545.45" font-family="Bitter" font-size="9.00" style="">Provides</text>
 </g>
 <!-- AzureCompute&#45;&gt;Mistral -->
-<g id="edge6" class="edge" data-name="AzureCompute-&gt;Mistral">
+<g id="edge4" class="edge" data-name="AzureCompute-&gt;Mistral">
 
-<path fill="none" stroke="#b45309" stroke-width="1.5" d="M839.08,-592.03C821.01,-538.6 782.12,-423.65 782.12,-423.65 782.12,-423.65 760.76,-414.67 739.09,-405.56"/>
-<polygon fill="#b45309" stroke="#b45309" stroke-width="1.5" points="740.19,-403.17 732.26,-402.69 738.16,-408.01 740.19,-403.17"/>
-<text text-anchor="middle" x="831.49" y="-437.15" font-family="Bitter" font-size="9.00">Supercomputing access</text>
-<text text-anchor="middle" x="831.49" y="-426.35" font-family="Bitter" font-size="9.00">(February 2024)</text>
-</g>
-<!-- AzureCompute&#45;&gt;Legend -->
-<!-- Mistral&#45;&gt;MistralCompute -->
-<g id="edge7" class="edge" data-name="Mistral-&gt;MistralCompute">
-
-<path fill="none" stroke="#b45309" stroke-width="1.8" stroke-dasharray="5,2" d="M730.2,-390.26C884.37,-405.67 1480.12,-465.25 1480.12,-465.25 1480.12,-465.25 1480.12,-774.25 1480.12,-774.25 1480.12,-774.25 1238.43,-819.68 1105.05,-844.75"/>
-<polygon fill="#b45309" stroke="#b45309" stroke-width="1.8" points="1104.81,-842.12 1097.93,-846.09 1105.78,-847.28 1104.81,-842.12"/>
-<text text-anchor="middle" x="1542.85" y="-617.05" font-family="Bitter" font-size="9.00">Announces infrastructure initiative</text>
+<path fill="none" stroke="#b45309" stroke-width="1.5" d="M1052.76,-466.95C1039.06,-447.84 1023.12,-425.6 1023.12,-425.6 1023.12,-425.6 1018.82,-420.29 1013.48,-413.7" style=""/>
+<polygon fill="#b45309" stroke="#b45309" stroke-width="1.5" points="1015.61,-412.17 1008.85,-408 1011.54,-415.48 1015.61,-412.17" style=""/>
+<text text-anchor="middle" x="1080.49" y="-439.1" font-family="Bitter" font-size="9.00" style="">Supercomputing access</text>
+<text text-anchor="middle" x="1080.49" y="-428.3" font-family="Bitter" font-size="9.00" style="">(February 2024)</text>
 </g>
 <!-- Mistral&#45;&gt;OpenModels -->
-<g id="edge8" class="edge" data-name="Mistral-&gt;OpenModels">
+<g id="edge6" class="edge" data-name="Mistral-&gt;OpenModels">
 
-<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M658.13,-379.7C584.84,-369.62 425.16,-347.65 425.16,-347.65 425.16,-347.65 366.91,-327.52 314.07,-309.26"/>
-<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="315.06,-306.83 307.12,-306.86 313.35,-311.79 315.06,-306.83"/>
-<text text-anchor="middle" x="466.11" y="-339.55" font-family="Bitter" font-size="9.00">Develops and releases</text>
-<text text-anchor="middle" x="466.11" y="-328.75" font-family="Bitter" font-size="9.00">open weights</text>
+<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M957.09,-383.48C854.15,-374.56 566.16,-349.6 566.16,-349.6 566.16,-349.6 404.79,-313.79 301.5,-290.87" style=""/>
+<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="302.11,-288.32 294.22,-289.26 300.97,-293.44 302.11,-288.32" style=""/>
+<text text-anchor="middle" x="607.11" y="-341.5" font-family="Bitter" font-size="9.00" style="">Develops and releases</text>
+<text text-anchor="middle" x="607.11" y="-330.7" font-family="Bitter" font-size="9.00" style="">open weights</text>
 </g>
-<!-- Mistral&#45;&gt;ProprietaryModels -->
-<g id="edge9" class="edge" data-name="Mistral-&gt;ProprietaryModels">
+<!-- Mistral&#45;&gt;Proprietary -->
+<g id="edge7" class="edge" data-name="Mistral-&gt;Proprietary">
 
-<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M658.32,-375.79C614.1,-364.84 544.65,-347.65 544.65,-347.65 544.65,-347.65 518.06,-329.27 492.65,-311.71"/>
-<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="494.36,-309.7 486.7,-307.6 491.37,-314.02 494.36,-309.7"/>
-<text text-anchor="middle" x="581.36" y="-334.15" font-family="Bitter" font-size="9.00">Develops and offers</text>
+<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M957.11,-381.76C882.44,-371.73 717.65,-349.6 717.65,-349.6 717.65,-349.6 628.75,-319.86 561.13,-297.24" style=""/>
+<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="562.26,-294.85 554.31,-294.96 560.59,-299.83 562.26,-294.85" style=""/>
+<text text-anchor="middle" x="754.36" y="-336.1" font-family="Bitter" font-size="9.00" style="">Develops and offers</text>
 </g>
 <!-- Mistral&#45;&gt;Platform -->
-<g id="edge12" class="edge" data-name="Mistral-&gt;Platform">
+<g id="edge17" class="edge" data-name="Mistral-&gt;Platform">
 
-<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M662.53,-366.8C645.79,-357.34 628.64,-347.65 628.64,-347.65 628.64,-347.65 627.91,-327.96 627.23,-309.86"/>
-<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="629.85,-309.77 626.95,-302.38 624.61,-309.97 629.85,-309.77"/>
-<text text-anchor="middle" x="666.36" y="-334.15" font-family="Bitter" font-size="9.00">Operates hosted API</text>
+<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M957.24,-375.92C885.06,-354.43 729.12,-308 729.12,-308 729.12,-308 720.77,-303.24 710.14,-297.2" style=""/>
+<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="711.46,-294.93 703.65,-293.5 708.87,-299.49 711.46,-294.93" style=""/>
+<text text-anchor="middle" x="898.36" y="-336.1" font-family="Bitter" font-size="9.00" style="">Operates hosted API</text>
 </g>
-<!-- Mistral&#45;&gt;LeChatEnterprise -->
-<g id="edge22" class="edge" data-name="Mistral-&gt;LeChatEnterprise">
+<!-- Mistral&#45;&gt;LeChat -->
+<g id="edge21" class="edge" data-name="Mistral-&gt;LeChat">
 
-<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M707.02,-366.94C718.87,-350.65 736.64,-326.25 750.3,-307.48"/>
-<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="752.25,-309.27 754.54,-301.66 748,-306.18 752.25,-309.27"/>
-<text text-anchor="middle" x="783.86" y="-334.15" font-family="Bitter" font-size="9.00">Offers enterprise assistant</text>
+<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M990.52,-368.97C989.11,-359.44 987.66,-349.6 987.66,-349.6 987.66,-349.6 987.66,-328 987.66,-328 987.66,-328 989.82,-315.25 992.07,-301.93" style=""/>
+<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="994.66,-302.38 993.33,-294.55 989.48,-301.51 994.66,-302.38" style=""/>
+<text text-anchor="middle" x="1034.86" y="-336.1" font-family="Bitter" font-size="9.00" style="">Offers enterprise assistant</text>
 </g>
-<!-- Mistral&#45;&gt;MistralCode -->
-<g id="edge23" class="edge" data-name="Mistral-&gt;MistralCode">
+<!-- Mistral&#45;&gt;Code -->
+<g id="edge22" class="edge" data-name="Mistral-&gt;Code">
 
-<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M730.08,-375.6C773.6,-364.64 841.12,-347.65 841.12,-347.65 841.12,-347.65 863.91,-325.71 883.48,-306.86"/>
-<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="885.28,-308.78 888.86,-301.68 881.64,-304.99 885.28,-308.78"/>
-<text text-anchor="middle" x="903.36" y="-334.15" font-family="Bitter" font-size="9.00">Offers coding assistant</text>
+<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M1029.2,-372.4C1055.71,-361.97 1087.12,-349.6 1087.12,-349.6 1087.12,-349.6 1102.25,-322.98 1114.76,-300.96" style=""/>
+<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="1117.02,-302.29 1118.44,-294.47 1112.45,-299.7 1117.02,-302.29" style=""/>
+<text text-anchor="middle" x="1139.36" y="-336.1" font-family="Bitter" font-size="9.00" style="">Offers coding assistant</text>
 </g>
-<!-- Mistral&#45;&gt;AIStudio -->
-<g id="edge24" class="edge" data-name="Mistral-&gt;AIStudio">
+<!-- Mistral&#45;&gt;Studio -->
+<g id="edge23" class="edge" data-name="Mistral-&gt;Studio">
 
-<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M730.14,-379.54C801.74,-369.39 955.12,-347.65 955.12,-347.65 955.12,-347.65 995.93,-324.14 1029.35,-304.89"/>
-<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="1030.5,-307.26 1035.69,-301.24 1027.88,-302.71 1030.5,-307.26"/>
-<text text-anchor="middle" x="1043.36" y="-334.15" font-family="Bitter" font-size="9.00">Introduces operational tooling</text>
+<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M1029.26,-379.81C1086.13,-369.13 1190.12,-349.6 1190.12,-349.6 1190.12,-349.6 1225.13,-321.06 1252.64,-298.63" style=""/>
+<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="1254.25,-300.71 1258.4,-293.93 1250.93,-296.64 1254.25,-300.71" style=""/>
+<text text-anchor="middle" x="1269.36" y="-336.1" font-family="Bitter" font-size="9.00" style="">Introduces operational tooling</text>
 </g>
-<!-- OpenModels&#45;&gt;OpenUsers -->
-<g id="edge10" class="edge" data-name="OpenModels-&gt;OpenUsers">
+<!-- Mistral&#45;&gt;ComputePlanned -->
+<g id="edge5" class="edge" data-name="Mistral-&gt;ComputePlanned">
 
-<path fill="none" stroke="#059669" stroke-width="2" stroke-dasharray="1,5" d="M173.56,-252.27C151.05,-241.94 130.39,-232.45 130.39,-232.45 130.39,-232.45 116.13,-205.68 104.37,-183.62"/>
-<polygon fill="#059669" stroke="#059669" stroke-width="2" points="106.8,-182.6 100.96,-177.22 102.17,-185.07 106.8,-182.6"/>
-<text text-anchor="middle" x="172.49" y="-218.95" font-family="Bitter" font-size="9.00">Downloadable weights</text>
-</g>
-<!-- OpenModels&#45;&gt;Bedrock -->
-<g id="edge16" class="edge" data-name="OpenModels-&gt;Bedrock">
-
-<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M226.61,-252.41C225.19,-242.02 223.89,-232.45 223.89,-232.45 223.89,-232.45 223.89,-210.85 223.89,-210.85 223.89,-210.85 225.83,-197.68 227.83,-184.13"/>
-<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="230.37,-184.9 228.87,-177.09 225.18,-184.13 230.37,-184.9"/>
-<text text-anchor="middle" x="257.24" y="-218.95" font-family="Bitter" font-size="9.00">Model availability</text>
-</g>
-<!-- ProprietaryModels&#45;&gt;AzureAI -->
-<g id="edge15" class="edge" data-name="ProprietaryModels-&gt;AzureAI">
-
-<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M417.52,-252.41C405.62,-242.02 394.66,-232.45 394.66,-232.45 394.66,-232.45 392.44,-206.16 390.59,-184.21"/>
-<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="393.21,-184.06 389.96,-176.81 387.98,-184.5 393.21,-184.06"/>
-<text text-anchor="middle" x="436.86" y="-218.95" font-family="Bitter" font-size="9.00">Managed model access</text>
-</g>
-<!-- ProprietaryModels&#45;&gt;Bedrock -->
-<g id="edge17" class="edge" data-name="ProprietaryModels-&gt;Bedrock">
-
-<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M401.79,-252.26C364.34,-230.79 311.54,-200.53 274.83,-179.48"/>
-<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="276.57,-177.45 268.76,-176 273.96,-182.01 276.57,-177.45"/>
-</g>
-<!-- ProprietaryModels&#45;&gt;Vertex -->
-<g id="edge18" class="edge" data-name="ProprietaryModels-&gt;Vertex">
-
-<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M468.57,-252.41C477.19,-242.02 485.12,-232.45 485.12,-232.45 485.12,-232.45 505.18,-204.72 521.28,-182.44"/>
-<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="523.39,-184 525.66,-176.38 519.14,-180.92 523.39,-184"/>
-<text text-anchor="middle" x="529.49" y="-218.95" font-family="Bitter" font-size="9.00">Managed MaaS</text>
+<path fill="none" stroke="#b45309" stroke-width="1.5" stroke-dasharray="5,2" d="M1029.19,-382.68C1116.69,-373.15 1333.12,-349.6 1333.12,-349.6 1333.12,-349.6 1368.24,-330.31 1403.42,-310.98" style=""/>
+<polygon fill="#b45309" stroke="#b45309" stroke-width="1.5" points="1404.57,-313.35 1409.88,-307.44 1402.04,-308.75 1404.57,-313.35" style=""/>
+<text text-anchor="middle" x="1432.85" y="-336.1" font-family="Bitter" font-size="9.00" style="">Announces infrastructure initiative</text>
 </g>
 <!-- OpenUsers&#45;&gt;SelfManaged -->
-<g id="edge11" class="edge" data-name="OpenUsers-&gt;SelfManaged">
+<g id="edge9" class="edge" data-name="OpenUsers-&gt;SelfManaged">
 
-<path fill="none" stroke="#059669" stroke-width="2" stroke-dasharray="1,5" d="M89.12,-133.32C89.12,-115.33 89.12,-88.24 89.12,-66.14"/>
-<polygon fill="#059669" stroke="#059669" stroke-width="2" points="91.75,-66.29 89.12,-58.79 86.5,-66.29 91.75,-66.29"/>
-<text text-anchor="middle" x="141.99" y="-83.65" font-family="Bitter" font-size="9.00">Can independently deploy on</text>
+<path fill="none" stroke="#059669" stroke-width="2" stroke-dasharray="1,5" d="M89.12,-124.13C89.12,-108.18 89.12,-85.3 89.12,-65.95" style=""/>
+<polygon fill="#059669" stroke="#059669" stroke-width="2" points="91.75,-66.16 89.12,-58.66 86.5,-66.16 91.75,-66.16" style=""/>
+<text text-anchor="middle" x="127.62" y="-83.65" font-family="Bitter" font-size="9.00" style="">Option to self-deploy</text>
 </g>
-<!-- Platform&#45;&gt;HostedInfra -->
-<g id="edge13" class="edge" data-name="Platform-&gt;HostedInfra">
+<!-- OpenModels&#45;&gt;OpenUsers -->
+<g id="edge8" class="edge" data-name="OpenModels-&gt;OpenUsers">
 
-<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M629.97,-258.39C633.81,-238.51 639.17,-210.85 639.17,-210.85 639.17,-210.85 650.58,-200.88 663.77,-189.37"/>
-<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="665.14,-191.66 669.06,-184.75 661.68,-187.7 665.14,-191.66"/>
-<text text-anchor="middle" x="687.6" y="-218.95" font-family="Bitter" font-size="9.00">Provides inference service</text>
+<path fill="none" stroke="#059669" stroke-width="2" stroke-dasharray="1,5" d="M171.69,-244.19C146.17,-229.6 119.39,-214.3 119.39,-214.3 119.39,-214.3 110.27,-193.7 102.05,-175.12" style=""/>
+<polygon fill="#059669" stroke="#059669" stroke-width="2" points="104.54,-174.27 99.1,-168.47 99.74,-176.39 104.54,-174.27" style=""/>
+<text text-anchor="middle" x="161.49" y="-200.8" font-family="Bitter" font-size="9.00" style="">Downloadable weights</text>
 </g>
-<!-- HostedInfra&#45;&gt;APIUsers -->
-<g id="edge14" class="edge" data-name="HostedInfra-&gt;APIUsers">
+<!-- OpenModels&#45;&gt;Bedrock -->
+<g id="edge10" class="edge" data-name="OpenModels-&gt;Bedrock">
 
-<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M703.12,-117.07C703.12,-98.38 703.12,-75.82 703.12,-58.18"/>
-<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="705.75,-58.2 703.12,-50.7 700.5,-58.2 705.75,-58.2"/>
-<text text-anchor="middle" x="733.73" y="-89.05" font-family="Bitter" font-size="9.00">Hosted inference</text>
-<text text-anchor="middle" x="733.73" y="-78.25" font-family="Bitter" font-size="9.00">via API</text>
+<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M214.69,-244.19C213.32,-229.6 211.89,-214.3 211.89,-214.3 211.89,-214.3 211.89,-192.7 211.89,-192.7 211.89,-192.7 231.86,-181.74 252.47,-170.43" style=""/>
+<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="253.67,-172.76 258.99,-166.85 251.15,-168.16 253.67,-172.76" style=""/>
+<text text-anchor="middle" x="245.24" y="-200.8" font-family="Bitter" font-size="9.00" style="">Model availability</text>
 </g>
-<!-- AzureAI&#45;&gt;CloudUsers -->
-<g id="edge19" class="edge" data-name="AzureAI-&gt;CloudUsers">
+<!-- Proprietary&#45;&gt;Bedrock -->
+<g id="edge11" class="edge" data-name="Proprietary-&gt;Bedrock">
 
-<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M388.12,-133.32C388.12,-113.05 388.12,-81.25 388.12,-58.04"/>
-<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="390.75,-58.14 388.12,-50.64 385.5,-58.14 390.75,-58.14"/>
+<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M425.94,-244.19C392.13,-229.6 356.66,-214.3 356.66,-214.3 356.66,-214.3 337.21,-191.97 320.55,-172.83" style=""/>
+<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="322.74,-171.35 315.83,-167.41 318.78,-174.79 322.74,-171.35" style=""/>
+<text text-anchor="middle" x="398.86" y="-200.8" font-family="Bitter" font-size="9.00" style="">Managed model access</text>
+</g>
+<!-- Proprietary&#45;&gt;AzureAI -->
+<g id="edge12" class="edge" data-name="Proprietary-&gt;AzureAI">
+
+<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M469.64,-244.19C460.38,-229.6 450.66,-214.3 450.66,-214.3 450.66,-214.3 449.6,-193.89 448.65,-175.37" style=""/>
+<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="451.27,-175.32 448.26,-167.97 446.03,-175.59 451.27,-175.32" style=""/>
+<text text-anchor="middle" x="492.86" y="-200.8" font-family="Bitter" font-size="9.00" style="">Managed model access</text>
+</g>
+<!-- Proprietary&#45;&gt;Vertex -->
+<g id="edge13" class="edge" data-name="Proprietary-&gt;Vertex">
+
+<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M511.23,-244.19C525.33,-229.6 540.12,-214.3 540.12,-214.3 540.12,-214.3 557.45,-192.36 572.48,-173.33" style=""/>
+<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="574.51,-175 577.1,-167.48 570.39,-171.74 574.51,-175" style=""/>
+<text text-anchor="middle" x="584.49" y="-200.8" font-family="Bitter" font-size="9.00" style="">Managed MaaS</text>
+</g>
+<!-- Platform&#45;&gt;Hosted -->
+<g id="edge18" class="edge" data-name="Platform-&gt;Hosted">
+
+<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M673.75,-249.8C682.36,-226.85 695.17,-192.7 695.17,-192.7 695.17,-192.7 714.63,-182.35 735.24,-171.39" style=""/>
+<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="736.38,-173.76 741.77,-167.92 733.92,-169.12 736.38,-173.76" style=""/>
+<text text-anchor="middle" x="743.6" y="-200.8" font-family="Bitter" font-size="9.00" style="">Provides inference service</text>
+</g>
+<!-- Hosted&#45;&gt;APIUsers -->
+<g id="edge20" class="edge" data-name="Hosted-&gt;APIUsers">
+
+<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M783.12,-116.93C783.12,-99.29 783.12,-76.25 783.12,-58.15" style=""/>
+<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="785.75,-58.17 783.12,-50.67 780.5,-58.17 785.75,-58.17" style=""/>
+<text text-anchor="middle" x="813.73" y="-89.05" font-family="Bitter" font-size="9.00" style="">Hosted inference</text>
+<text text-anchor="middle" x="813.73" y="-78.25" font-family="Bitter" font-size="9.00" style="">via API</text>
 </g>
 <!-- Bedrock&#45;&gt;CloudUsers -->
-<g id="edge20" class="edge" data-name="Bedrock-&gt;CloudUsers">
+<g id="edge14" class="edge" data-name="Bedrock-&gt;CloudUsers">
 
-<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M256.84,-133.32C283.58,-112.03 326.31,-78 355.72,-54.58"/>
-<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="357.25,-56.71 361.49,-49.99 353.98,-52.6 357.25,-56.71"/>
+<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M322.91,-124.13C348.18,-104.73 386.78,-75.1 414.24,-54.01" style=""/>
+<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="415.52,-56.34 419.87,-49.69 412.33,-52.18 415.52,-56.34" style=""/>
+</g>
+<!-- AzureAI&#45;&gt;CloudUsers -->
+<g id="edge15" class="edge" data-name="AzureAI-&gt;CloudUsers">
+
+<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M447.12,-124.13C447.12,-105.89 447.12,-78.6 447.12,-57.89" style=""/>
+<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="449.75,-58.08 447.12,-50.58 444.5,-58.08 449.75,-58.08" style=""/>
 </g>
 <!-- Vertex&#45;&gt;CloudUsers -->
-<g id="edge21" class="edge" data-name="Vertex-&gt;CloudUsers">
+<g id="edge16" class="edge" data-name="Vertex-&gt;CloudUsers">
 
-<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M516.88,-133.32C490.66,-112.03 448.75,-78 419.9,-54.58"/>
-<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="421.75,-52.69 414.27,-50 418.44,-56.77 421.75,-52.69"/>
+<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M568.85,-124.13C544.2,-104.82 506.58,-75.35 479.69,-54.29" style=""/>
+<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="481.37,-52.27 473.85,-49.71 478.14,-56.4 481.37,-52.27" style=""/>
 </g>
-<!-- LeChatEnterprise&#45;&gt;EnterpriseUsers -->
-<g id="edge25" class="edge" data-name="LeChatEnterprise-&gt;EnterpriseUsers">
+<!-- Enix&#45;&gt;Hosted -->
+<g id="edge19" class="edge" data-name="Enix-&gt;Hosted">
 
-<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M787.52,-258.39C804.93,-238.51 829.16,-210.85 829.16,-210.85 829.16,-210.85 854.59,-194.89 878.25,-180.03"/>
-<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="879.63,-182.27 884.58,-176.05 876.84,-177.82 879.63,-182.27"/>
-<text text-anchor="middle" x="867.11" y="-218.95" font-family="Bitter" font-size="9.00">Enterprise AI access</text>
+<path fill="none" stroke="#b9b9b9" stroke-width="1.5" d="M819.31,-250.47C812.97,-232.15 803.36,-204.4 795.64,-182.09" style=""/>
+<polygon fill="#b9b9b9" stroke="#b9b9b9" stroke-width="1.5" points="798.14,-181.28 793.21,-175.06 793.18,-183 798.14,-181.28" style=""/>
+<text text-anchor="middle" x="850.36" y="-200.8" font-family="Bitter" font-size="9.00" fill="#888888" style="">Engineering / operations</text>
 </g>
-<!-- MistralCode&#45;&gt;EnterpriseUsers -->
-<g id="edge26" class="edge" data-name="MistralCode-&gt;EnterpriseUsers">
+<!-- LeChat&#45;&gt;EnterpriseUsers -->
+<g id="edge24" class="edge" data-name="LeChat-&gt;EnterpriseUsers">
 
-<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M912.25,-258.45C913.39,-238.41 915.16,-207.21 916.46,-184.31"/>
-<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="919.07,-184.66 916.87,-177.02 913.83,-184.36 919.07,-184.66"/>
-<text text-anchor="middle" x="956.86" y="-218.95" font-family="Bitter" font-size="9.00">Enterprise coding tools</text>
+<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M1010.27,-249.8C1025.09,-226.85 1047.16,-192.7 1047.16,-192.7 1047.16,-192.7 1067.12,-181.58 1087.57,-170.19" style=""/>
+<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="1088.74,-172.54 1094.02,-166.6 1086.19,-167.95 1088.74,-172.54" style=""/>
+<text text-anchor="middle" x="1085.11" y="-200.8" font-family="Bitter" font-size="9.00" style="">Enterprise AI access</text>
 </g>
-<!-- AIStudio&#45;&gt;EnterpriseUsers -->
-<g id="edge27" class="edge" data-name="AIStudio-&gt;EnterpriseUsers">
+<!-- Code&#45;&gt;EnterpriseUsers -->
+<g id="edge25" class="edge" data-name="Code-&gt;EnterpriseUsers">
 
-<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M1053.56,-258.39C1034.98,-238.51 1009.12,-210.85 1009.12,-210.85 1009.12,-210.85 982.89,-194.75 958.59,-179.83"/>
-<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="960.16,-177.72 952.4,-176.04 957.42,-182.2 960.16,-177.72"/>
-<text text-anchor="middle" x="1056.75" y="-224.35" font-family="Bitter" font-size="9.00">Platform tooling</text>
-<text text-anchor="middle" x="1056.75" y="-213.55" font-family="Bitter" font-size="9.00">(private beta)</text>
+<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M1131.12,-249.91C1131.12,-229.67 1131.12,-198.32 1131.12,-175.33" style=""/>
+<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="1133.75,-175.51 1131.12,-168.01 1128.5,-175.51 1133.75,-175.51" style=""/>
+<text text-anchor="middle" x="1172.86" y="-200.8" font-family="Bitter" font-size="9.00" style="">Enterprise coding tools</text>
 </g>
-<!-- EnterpriseUsers&#45;&gt;PrivateDeployment -->
-<g id="edge28" class="edge" data-name="EnterpriseUsers-&gt;PrivateDeployment">
+<!-- Studio&#45;&gt;EnterpriseUsers -->
+<g id="edge26" class="edge" data-name="Studio-&gt;EnterpriseUsers">
 
-<path fill="none" stroke="#059669" stroke-width="2" stroke-dasharray="1,5" d="M918.12,-133.32C918.12,-115.33 918.12,-88.24 918.12,-66.14"/>
-<polygon fill="#059669" stroke="#059669" stroke-width="2" points="920.75,-66.29 918.12,-58.79 915.5,-66.29 920.75,-66.29"/>
-<text text-anchor="middle" x="982.87" y="-83.65" font-family="Bitter" font-size="9.00">Private / hybrid deployment options</text>
+<path fill="none" stroke="#2563eb" stroke-width="1.5" d="M1269.1,-249.8C1251.02,-226.85 1224.12,-192.7 1224.12,-192.7 1224.12,-192.7 1198.91,-180.02 1174.75,-167.86" style=""/>
+<polygon fill="#2563eb" stroke="#2563eb" stroke-width="1.5" points="1176.19,-165.65 1168.31,-164.63 1173.83,-170.34 1176.19,-165.65" style=""/>
+<text text-anchor="middle" x="1269.75" y="-206.2" font-family="Bitter" font-size="9.00" style="">Platform tooling</text>
+<text text-anchor="middle" x="1269.75" y="-195.4" font-family="Bitter" font-size="9.00" style="">(private beta)</text>
+</g>
+<!-- EnterpriseUsers&#45;&gt;EnterpriseDeployment -->
+<g id="edge27" class="edge" data-name="EnterpriseUsers-&gt;EnterpriseDeployment">
+
+<path fill="none" stroke="#059669" stroke-width="2" stroke-dasharray="1,5" d="M1131.12,-124.13C1131.12,-108.18 1131.12,-85.3 1131.12,-65.95" style=""/>
+<polygon fill="#059669" stroke="#059669" stroke-width="2" points="1133.75,-66.16 1131.12,-58.66 1128.5,-66.16 1133.75,-66.16" style=""/>
+<text text-anchor="middle" x="1195.87" y="-83.65" font-family="Bitter" font-size="9.00" style="">Private / hybrid deployment options</text>
 </g>
 <!-- CoreWeave -->
 <g id="node1" class="node" pointer-events="visible" data-name="CoreWeave">
 
-<polygon fill="#e5e7eb" stroke="#555555" stroke-width="1.2" points="586.04,-879.9 510.21,-879.9 510.21,-843.9 586.04,-843.9 586.04,-879.9"/>
-<text text-anchor="middle" x="548.12" y="-858.6" font-family="Bitter" font-size="11.00" fill="#111111">CoreWeave</text>
+<polygon fill="#e5e7eb" stroke="#555555" stroke-width="1.2" points="954.04,-609.55 878.21,-609.55 878.21,-573.55 954.04,-573.55 954.04,-609.55" style=""/>
+<text text-anchor="middle" x="916.12" y="-588.25" font-family="Bitter" font-size="11.00" fill="#111111" style="">CoreWeave</text>
 </g>
-<!-- CINECA -->
-<g id="node2" class="node" pointer-events="visible" data-name="CINECA">
+<!-- GB200 -->
+<g id="node2" class="node" pointer-events="visible" data-name="GB200">
 
-<polygon fill="#e5e7eb" stroke="#555555" stroke-width="1.2" points="752.4,-879.9 635.84,-879.9 635.84,-843.9 752.4,-843.9 752.4,-879.9"/>
-<text text-anchor="middle" x="694.12" y="-858.6" font-family="Bitter" font-size="11.00" fill="#111111">CINECA / EuroHPC</text>
+<path fill="#515151" stroke="#515151" stroke-width="1.2" d="M970.13,-517.52C970.13,-520.28 945.92,-522.53 916.12,-522.53 886.33,-522.53 862.12,-520.28 862.12,-517.52 862.12,-517.52 862.12,-472.43 862.12,-472.43 862.12,-469.67 886.33,-467.42 916.12,-467.42 945.92,-467.42 970.13,-469.67 970.13,-472.43 970.13,-472.43 970.13,-517.52 970.13,-517.52" style=""/>
+<path fill="none" stroke="#515151" stroke-width="1.2" d="M970.13,-517.52C970.13,-514.75 945.92,-512.51 916.12,-512.51 886.33,-512.51 862.12,-514.75 862.12,-517.52" style=""/>
+<text text-anchor="middle" x="916.12" y="-498.27" font-family="Bitter" font-size="11.00" fill="white" style="">NVIDIA GB200</text>
+<text text-anchor="middle" x="916.12" y="-485.07" font-family="Bitter" font-size="11.00" fill="white" style="">GPU infrastructure</text>
 </g>
 <!-- Microsoft -->
 <g id="node3" class="node" pointer-events="visible" data-name="Microsoft">
 
-<polygon fill="#e5e7eb" stroke="#555555" stroke-width="1.2" points="896.63,-879.9 799.62,-879.9 799.62,-843.9 896.63,-843.9 896.63,-879.9"/>
-<text text-anchor="middle" x="848.12" y="-858.6" font-family="Bitter" font-size="11.00" fill="#111111">Microsoft Azure</text>
-</g>
-<!-- CoreWeaveGPU -->
-<g id="node4" class="node" pointer-events="visible" data-name="CoreWeaveGPU">
-
-<path fill="#515151" stroke="#515151" stroke-width="1.2" d="M602.13,-642.29C602.13,-645.06 577.92,-647.3 548.12,-647.3 518.33,-647.3 494.12,-645.06 494.12,-642.29 494.12,-642.29 494.12,-597.21 494.12,-597.21 494.12,-594.44 518.33,-592.2 548.12,-592.2 577.92,-592.2 602.13,-594.44 602.13,-597.21 602.13,-597.21 602.13,-642.29 602.13,-642.29"/>
-<path fill="none" stroke="#515151" stroke-width="1.2" d="M602.13,-642.29C602.13,-639.53 577.92,-637.28 548.12,-637.28 518.33,-637.28 494.12,-639.53 494.12,-642.29"/>
-<text text-anchor="middle" x="548.12" y="-623.05" font-family="Bitter" font-size="11.00" fill="#ffffff">NVIDIA H100</text>
-<text text-anchor="middle" x="548.12" y="-609.85" font-family="Bitter" font-size="11.00" fill="#ffffff">GPU infrastructure</text>
-</g>
-<!-- Leonardo -->
-<g id="node5" class="node" pointer-events="visible" data-name="Leonardo">
-
-<path fill="#515151" stroke="#515151" stroke-width="1.2" d="M738.99,-642.29C738.99,-645.06 718.88,-647.3 694.12,-647.3 669.37,-647.3 649.26,-645.06 649.26,-642.29 649.26,-642.29 649.26,-597.21 649.26,-597.21 649.26,-594.44 669.37,-592.2 694.12,-592.2 718.88,-592.2 738.99,-594.44 738.99,-597.21 738.99,-597.21 738.99,-642.29 738.99,-642.29"/>
-<path fill="none" stroke="#515151" stroke-width="1.2" d="M738.99,-642.29C738.99,-639.53 718.88,-637.28 694.12,-637.28 669.37,-637.28 649.26,-639.53 649.26,-642.29"/>
-<text text-anchor="middle" x="694.12" y="-623.05" font-family="Bitter" font-size="11.00" fill="#ffffff">Leonardo</text>
-<text text-anchor="middle" x="694.12" y="-609.85" font-family="Bitter" font-size="11.00" fill="#ffffff">supercomputer</text>
+<polygon fill="#e5e7eb" stroke="#555555" stroke-width="1.2" points="1120.63,-609.55 1023.62,-609.55 1023.62,-573.55 1120.63,-573.55 1120.63,-609.55" style=""/>
+<text text-anchor="middle" x="1072.12" y="-588.25" font-family="Bitter" font-size="11.00" fill="#111111" style="">Microsoft Azure</text>
 </g>
 <!-- AzureCompute -->
-<g id="node6" class="node" pointer-events="visible" data-name="AzureCompute">
+<g id="node4" class="node" pointer-events="visible" data-name="AzureCompute">
 
-<path fill="#515151" stroke="#515151" stroke-width="1.2" d="M910.62,-642.29C910.62,-645.06 882.61,-647.3 848.12,-647.3 813.64,-647.3 785.62,-645.06 785.62,-642.29 785.62,-642.29 785.62,-597.21 785.62,-597.21 785.62,-594.44 813.64,-592.2 848.12,-592.2 882.61,-592.2 910.62,-594.44 910.62,-597.21 910.62,-597.21 910.62,-642.29 910.62,-642.29"/>
-<path fill="none" stroke="#515151" stroke-width="1.2" d="M910.62,-642.29C910.62,-639.53 882.61,-637.28 848.12,-637.28 813.64,-637.28 785.62,-639.53 785.62,-642.29"/>
-<text text-anchor="middle" x="848.12" y="-623.05" font-family="Bitter" font-size="11.00" fill="#ffffff">Azure supercomputing</text>
-<text text-anchor="middle" x="848.12" y="-609.85" font-family="Bitter" font-size="11.00" fill="#ffffff">infrastructure</text>
+<path fill="#515151" stroke="#515151" stroke-width="1.2" d="M1134.62,-517.52C1134.62,-520.28 1106.61,-522.53 1072.12,-522.53 1037.64,-522.53 1009.62,-520.28 1009.62,-517.52 1009.62,-517.52 1009.62,-472.43 1009.62,-472.43 1009.62,-469.67 1037.64,-467.42 1072.12,-467.42 1106.61,-467.42 1134.62,-469.67 1134.62,-472.43 1134.62,-472.43 1134.62,-517.52 1134.62,-517.52" style=""/>
+<path fill="none" stroke="#515151" stroke-width="1.2" d="M1134.62,-517.52C1134.62,-514.75 1106.61,-512.51 1072.12,-512.51 1037.64,-512.51 1009.62,-514.75 1009.62,-517.52" style=""/>
+<text text-anchor="middle" x="1072.12" y="-498.27" font-family="Bitter" font-size="11.00" fill="white" style="">Azure supercomputing</text>
+<text text-anchor="middle" x="1072.12" y="-485.07" font-family="Bitter" font-size="11.00" fill="white" style="">infrastructure</text>
 </g>
 <!-- Mistral -->
-<g id="node7" class="node" pointer-events="visible" data-name="Mistral">
+<g id="node5" class="node" pointer-events="visible" data-name="Mistral">
 
-<polygon fill="#bfdbfe" stroke="#2563eb" stroke-width="2" points="729.26,-403.65 658.99,-403.65 658.99,-367.65 729.26,-367.65 729.26,-403.65"/>
-<text text-anchor="middle" x="694.12" y="-382.35" font-family="Bitter" font-size="11.00" fill="#111111">Mistral AI</text>
-</g>
-<!-- MistralCompute -->
-<g id="node8" class="node" pointer-events="visible" data-name="MistralCompute">
-
-<path fill="#fff7ed" stroke="#b45309" stroke-width="2" stroke-dasharray="5,2" d="M1094.38,-891.93C1094.38,-895.61 1060.65,-898.6 1019.12,-898.6 977.6,-898.6 943.87,-895.61 943.87,-891.93 943.87,-891.93 943.87,-831.87 943.87,-831.87 943.87,-828.19 977.6,-825.2 1019.12,-825.2 1060.65,-825.2 1094.38,-828.19 1094.38,-831.87 1094.38,-831.87 1094.38,-891.93 1094.38,-891.93"/>
-<path fill="none" stroke="#b45309" stroke-width="2" stroke-dasharray="5,2" d="M1094.38,-891.93C1094.38,-888.25 1060.65,-885.25 1019.12,-885.25 977.6,-885.25 943.87,-888.25 943.87,-891.93"/>
-<text text-anchor="middle" x="1019.12" y="-871.8" font-family="Bitter" font-size="11.00" fill="#92400e">Mistral Compute</text>
-<text text-anchor="middle" x="1019.12" y="-858.6" font-family="Bitter" font-size="11.00" fill="#92400e">Announced June 2025</text>
-<text text-anchor="middle" x="1019.12" y="-845.4" font-family="Bitter" font-size="11.00" fill="#92400e">(not yet verified operational)</text>
-</g>
-<!-- OpenModels -->
-<g id="node9" class="node" pointer-events="visible" data-name="OpenModels">
-
-<path fill="#fef3c7" stroke="#555555" stroke-width="1.2" d="M292.7,-305.85C292.7,-305.85 167.55,-305.85 167.55,-305.85 161.55,-305.85 155.55,-299.85 155.55,-293.85 155.55,-293.85 155.55,-264.65 155.55,-264.65 155.55,-258.65 161.55,-252.65 167.55,-252.65 167.55,-252.65 292.7,-252.65 292.7,-252.65 298.7,-252.65 304.7,-258.65 304.7,-264.65 304.7,-264.65 304.7,-293.85 304.7,-293.85 304.7,-299.85 298.7,-305.85 292.7,-305.85"/>
-<text text-anchor="middle" x="230.12" y="-289.15" font-family="Bitter" font-size="11.00" fill="#111111">Open-weight models</text>
-<text text-anchor="middle" x="230.12" y="-275.95" font-family="Bitter" font-size="11.00" fill="#111111">Mistral 7B / Mixtral / NeMo</text>
-<text text-anchor="middle" x="230.12" y="-262.75" font-family="Bitter" font-size="11.00" fill="#111111">and subsequent releases</text>
-</g>
-<!-- ProprietaryModels -->
-<g id="node10" class="node" pointer-events="visible" data-name="ProprietaryModels">
-
-<path fill="#fef3c7" stroke="#555555" stroke-width="1.2" d="M500.85,-305.85C500.85,-305.85 393.39,-305.85 393.39,-305.85 387.39,-305.85 381.39,-299.85 381.39,-293.85 381.39,-293.85 381.39,-264.65 381.39,-264.65 381.39,-258.65 387.39,-252.65 393.39,-252.65 393.39,-252.65 500.85,-252.65 500.85,-252.65 506.85,-252.65 512.85,-258.65 512.85,-264.65 512.85,-264.65 512.85,-293.85 512.85,-293.85 512.85,-299.85 506.85,-305.85 500.85,-305.85"/>
-<text text-anchor="middle" x="447.12" y="-289.15" font-family="Bitter" font-size="11.00" fill="#111111">Proprietary models</text>
-<text text-anchor="middle" x="447.12" y="-275.95" font-family="Bitter" font-size="11.00" fill="#111111">Mistral Large family</text>
-<text text-anchor="middle" x="447.12" y="-262.75" font-family="Bitter" font-size="11.00" fill="#111111">and other hosted models</text>
+<polygon fill="#bfdbfe" stroke="#2563eb" stroke-width="2" points="1028.26,-405.6 957.99,-405.6 957.99,-369.6 1028.26,-369.6 1028.26,-405.6" style=""/>
+<text text-anchor="middle" x="993.12" y="-384.3" font-family="Bitter" font-size="11.00" fill="#111111" style="">Mistral AI</text>
 </g>
 <!-- OpenUsers -->
-<g id="node11" class="node" pointer-events="visible" data-name="OpenUsers">
+<g id="node6" class="node" pointer-events="visible" data-name="OpenUsers">
 
-<polygon fill="#d1fae5" stroke="#555555" stroke-width="1.2" points="131.01,-174.4 47.24,-174.4 47.24,-133.6 131.01,-133.6 131.01,-174.4"/>
-<text text-anchor="middle" x="89.12" y="-157.3" font-family="Bitter" font-size="11.00" fill="#111111">Model users /</text>
-<text text-anchor="middle" x="89.12" y="-144.1" font-family="Bitter" font-size="11.00" fill="#111111">deployers</text>
+<polygon fill="#d1fae5" stroke="#555555" stroke-width="1.2" points="131.01,-165.33 47.24,-165.33 47.24,-124.52 131.01,-124.52 131.01,-165.33" style=""/>
+<text text-anchor="middle" x="89.12" y="-148.22" font-family="Bitter" font-size="11.00" fill="#111111" style="">Model users /</text>
+<text text-anchor="middle" x="89.12" y="-135.02" font-family="Bitter" font-size="11.00" fill="#111111" style="">deployers</text>
 </g>
 <!-- SelfManaged -->
-<g id="node12" class="node" pointer-events="visible" data-name="SelfManaged">
+<g id="node7" class="node" pointer-events="visible" data-name="SelfManaged">
 
-<path fill="#d1fae5" stroke="#555555" stroke-width="1.2" d="M178.37,-50.32C178.37,-53.08 138.37,-55.33 89.12,-55.33 39.88,-55.33 -0.12,-53.08 -0.12,-50.32 -0.12,-50.32 -0.12,-5.23 -0.12,-5.23 -0.12,-2.47 39.88,-0.22 89.12,-0.22 138.37,-0.22 178.37,-2.47 178.37,-5.23 178.37,-5.23 178.37,-50.32 178.37,-50.32"/>
-<path fill="none" stroke="#555555" stroke-width="1.2" d="M178.37,-50.32C178.37,-47.55 138.37,-45.31 89.12,-45.31 39.88,-45.31 -0.12,-47.55 -0.12,-50.32"/>
-<text text-anchor="middle" x="89.12" y="-31.07" font-family="Bitter" font-size="11.00" fill="#111111">Self-managed deployment</text>
-<text text-anchor="middle" x="89.12" y="-17.87" font-family="Bitter" font-size="11.00" fill="#111111">(Local / private / third-party cloud)</text>
+<path fill="#d1fae5" stroke="#555555" stroke-width="1.2" d="M178.37,-50.32C178.37,-53.08 138.37,-55.33 89.12,-55.33 39.88,-55.33 -0.12,-53.08 -0.12,-50.32 -0.12,-50.32 -0.12,-5.23 -0.12,-5.23 -0.12,-2.47 39.88,-0.22 89.12,-0.22 138.37,-0.22 178.37,-2.47 178.37,-5.23 178.37,-5.23 178.37,-50.32 178.37,-50.32" style=""/>
+<path fill="none" stroke="#555555" stroke-width="1.2" d="M178.37,-50.32C178.37,-47.55 138.37,-45.31 89.12,-45.31 39.88,-45.31 -0.12,-47.55 -0.12,-50.32" style=""/>
+<text text-anchor="middle" x="89.12" y="-31.07" font-family="Bitter" font-size="11.00" fill="#111111" style="">Self-managed deployment</text>
+<text text-anchor="middle" x="89.12" y="-17.87" font-family="Bitter" font-size="11.00" fill="#111111" style="">(Local / private / third-party cloud)</text>
+</g>
+<!-- OpenModels -->
+<g id="node8" class="node" pointer-events="visible" data-name="OpenModels">
+
+<path fill="#fef3c7" stroke="#555555" stroke-width="1.2" d="M279.7,-297.75C279.7,-297.75 154.55,-297.75 154.55,-297.75 148.55,-297.75 142.55,-291.75 142.55,-285.75 142.55,-285.75 142.55,-256.55 142.55,-256.55 142.55,-250.55 148.55,-244.55 154.55,-244.55 154.55,-244.55 279.7,-244.55 279.7,-244.55 285.7,-244.55 291.7,-250.55 291.7,-256.55 291.7,-256.55 291.7,-285.75 291.7,-285.75 291.7,-291.75 285.7,-297.75 279.7,-297.75" style=""/>
+<text text-anchor="middle" x="217.12" y="-281.05" font-family="Bitter" font-size="11.00" fill="#111111" style="">Open-weight models</text>
+<text text-anchor="middle" x="217.12" y="-267.85" font-family="Bitter" font-size="11.00" fill="#111111" style="">Mistral 7B / Mixtral / NeMo</text>
+<text text-anchor="middle" x="217.12" y="-254.65" font-family="Bitter" font-size="11.00" fill="#111111" style="">and subsequent releases</text>
+</g>
+<!-- Proprietary -->
+<g id="node9" class="node" pointer-events="visible" data-name="Proprietary">
+
+<path fill="#fef3c7" stroke="#555555" stroke-width="1.2" d="M539.85,-297.75C539.85,-297.75 432.39,-297.75 432.39,-297.75 426.39,-297.75 420.39,-291.75 420.39,-285.75 420.39,-285.75 420.39,-256.55 420.39,-256.55 420.39,-250.55 426.39,-244.55 432.39,-244.55 432.39,-244.55 539.85,-244.55 539.85,-244.55 545.85,-244.55 551.85,-250.55 551.85,-256.55 551.85,-256.55 551.85,-285.75 551.85,-285.75 551.85,-291.75 545.85,-297.75 539.85,-297.75" style=""/>
+<text text-anchor="middle" x="486.12" y="-281.05" font-family="Bitter" font-size="11.00" fill="#111111" style="">Proprietary models</text>
+<text text-anchor="middle" x="486.12" y="-267.85" font-family="Bitter" font-size="11.00" fill="#111111" style="">Mistral Large family</text>
+<text text-anchor="middle" x="486.12" y="-254.65" font-family="Bitter" font-size="11.00" fill="#111111" style="">and other hosted models</text>
 </g>
 <!-- Platform -->
-<g id="node13" class="node" pointer-events="visible" data-name="Platform">
+<g id="node10" class="node" pointer-events="visible" data-name="Platform">
 
-<polygon fill="#bfdbfe" stroke="#2563eb" stroke-width="1.8" points="669.24,-299.65 583.01,-299.65 583.01,-258.85 669.24,-258.85 669.24,-299.65"/>
-<text text-anchor="middle" x="626.12" y="-282.55" font-family="Bitter" font-size="11.00" fill="#111111">La Plateforme</text>
-<text text-anchor="middle" x="626.12" y="-269.35" font-family="Bitter" font-size="11.00" fill="#111111">Hosted API</text>
+<polygon fill="#bfdbfe" stroke="#2563eb" stroke-width="2" points="709.24,-291.55 623.01,-291.55 623.01,-250.75 709.24,-250.75 709.24,-291.55" style=""/>
+<text text-anchor="middle" x="666.12" y="-274.45" font-family="Bitter" font-size="11.00" fill="#111111" style="">La Plateforme</text>
+<text text-anchor="middle" x="666.12" y="-261.25" font-family="Bitter" font-size="11.00" fill="#111111" style="">Hosted API</text>
 </g>
-<!-- HostedInfra -->
-<g id="node14" class="node" pointer-events="visible" data-name="HostedInfra">
+<!-- Hosted -->
+<g id="node11" class="node" pointer-events="visible" data-name="Hosted">
 
-<path fill="#515151" stroke="#515151" stroke-width="1.2" d="M766.53,-184.03C766.53,-187.71 738.11,-190.7 703.12,-190.7 668.13,-190.7 639.71,-187.71 639.71,-184.03 639.71,-184.03 639.71,-123.97 639.71,-123.97 639.71,-120.29 668.13,-117.3 703.12,-117.3 738.11,-117.3 766.53,-120.29 766.53,-123.97 766.53,-123.97 766.53,-184.03 766.53,-184.03"/>
-<path fill="none" stroke="#515151" stroke-width="1.2" d="M766.53,-184.03C766.53,-180.35 738.11,-177.35 703.12,-177.35 668.13,-177.35 639.71,-180.35 639.71,-184.03"/>
-<text text-anchor="middle" x="703.12" y="-163.9" font-family="Bitter" font-size="11.00" fill="#ffffff">Mistral-managed</text>
-<text text-anchor="middle" x="703.12" y="-150.7" font-family="Bitter" font-size="11.00" fill="#ffffff">inference infrastructure</text>
-<text text-anchor="middle" x="703.12" y="-137.5" font-family="Bitter" font-size="11.00" fill="#ffffff">(provider unspecified)</text>
+<path fill="#515151" stroke="#515151" stroke-width="1.2" d="M846.53,-167.47C846.53,-170.23 818.11,-172.48 783.12,-172.48 748.13,-172.48 719.71,-170.23 719.71,-167.47 719.71,-167.47 719.71,-122.38 719.71,-122.38 719.71,-119.62 748.13,-117.37 783.12,-117.37 818.11,-117.37 846.53,-119.62 846.53,-122.38 846.53,-122.38 846.53,-167.47 846.53,-167.47" style=""/>
+<path fill="none" stroke="#515151" stroke-width="1.2" d="M846.53,-167.47C846.53,-164.7 818.11,-162.46 783.12,-162.46 748.13,-162.46 719.71,-164.7 719.71,-167.47" style=""/>
+<text text-anchor="middle" x="783.12" y="-148.22" font-family="Bitter" font-size="11.00" fill="white" style="">Mistral-managed</text>
+<text text-anchor="middle" x="783.12" y="-135.02" font-family="Bitter" font-size="11.00" fill="white" style="">inference infrastructure</text>
 </g>
 <!-- APIUsers -->
-<g id="node15" class="node" pointer-events="visible" data-name="APIUsers">
+<g id="node12" class="node" pointer-events="visible" data-name="APIUsers">
 
-<polygon fill="#d1fae5" stroke="#555555" stroke-width="1.2" points="747.7,-48.18 658.55,-48.18 658.55,-7.37 747.7,-7.37 747.7,-48.18"/>
-<text text-anchor="middle" x="703.12" y="-31.07" font-family="Bitter" font-size="11.00" fill="#111111">La Plateforme</text>
-<text text-anchor="middle" x="703.12" y="-17.87" font-family="Bitter" font-size="11.00" fill="#111111">API customers</text>
-</g>
-<!-- AzureAI -->
-<g id="node16" class="node" pointer-events="visible" data-name="AzureAI">
-
-<polygon fill="#e5e7eb" stroke="#555555" stroke-width="1.2" points="442.21,-174.4 334.03,-174.4 334.03,-133.6 442.21,-133.6 442.21,-174.4"/>
-<text text-anchor="middle" x="388.12" y="-157.3" font-family="Bitter" font-size="11.00" fill="#111111">Azure AI</text>
-<text text-anchor="middle" x="388.12" y="-144.1" font-family="Bitter" font-size="11.00" fill="#111111">Managed inference</text>
+<polygon fill="#d1fae5" stroke="#555555" stroke-width="1.2" points="827.7,-48.18 738.55,-48.18 738.55,-7.37 827.7,-7.37 827.7,-48.18" style=""/>
+<text text-anchor="middle" x="783.12" y="-31.07" font-family="Bitter" font-size="11.00" fill="#111111" style="">La Plateforme</text>
+<text text-anchor="middle" x="783.12" y="-17.87" font-family="Bitter" font-size="11.00" fill="#111111" style="">API customers</text>
 </g>
 <!-- Bedrock -->
-<g id="node17" class="node" pointer-events="visible" data-name="Bedrock">
+<g id="node13" class="node" pointer-events="visible" data-name="Bedrock">
 
-<polygon fill="#e5e7eb" stroke="#555555" stroke-width="1.2" points="286.21,-174.4 178.03,-174.4 178.03,-133.6 286.21,-133.6 286.21,-174.4"/>
-<text text-anchor="middle" x="232.12" y="-157.3" font-family="Bitter" font-size="11.00" fill="#111111">Amazon Bedrock</text>
-<text text-anchor="middle" x="232.12" y="-144.1" font-family="Bitter" font-size="11.00" fill="#111111">Managed inference</text>
+<polygon fill="#e5e7eb" stroke="#555555" stroke-width="1.2" points="351.21,-165.33 243.03,-165.33 243.03,-124.52 351.21,-124.52 351.21,-165.33" style=""/>
+<text text-anchor="middle" x="297.12" y="-148.22" font-family="Bitter" font-size="11.00" fill="#111111" style="">Amazon Bedrock</text>
+<text text-anchor="middle" x="297.12" y="-135.02" font-family="Bitter" font-size="11.00" fill="#111111" style="">Managed inference</text>
+</g>
+<!-- AzureAI -->
+<g id="node14" class="node" pointer-events="visible" data-name="AzureAI">
+
+<polygon fill="#e5e7eb" stroke="#555555" stroke-width="1.2" points="502.98,-165.33 391.26,-165.33 391.26,-124.52 502.98,-124.52 502.98,-165.33" style=""/>
+<text text-anchor="middle" x="447.12" y="-148.22" font-family="Bitter" font-size="11.00" fill="#111111" style="">Microsoft Azure AI</text>
+<text text-anchor="middle" x="447.12" y="-135.02" font-family="Bitter" font-size="11.00" fill="#111111" style="">Managed inference</text>
 </g>
 <!-- Vertex -->
-<g id="node18" class="node" pointer-events="visible" data-name="Vertex">
+<g id="node15" class="node" pointer-events="visible" data-name="Vertex">
 
-<polygon fill="#e5e7eb" stroke="#555555" stroke-width="1.2" points="593.04,-174.4 489.21,-174.4 489.21,-133.6 593.04,-133.6 593.04,-174.4"/>
-<text text-anchor="middle" x="541.12" y="-157.3" font-family="Bitter" font-size="11.00" fill="#111111">Google Vertex AI</text>
-<text text-anchor="middle" x="541.12" y="-144.1" font-family="Bitter" font-size="11.00" fill="#111111">Managed MaaS</text>
+<polygon fill="#e5e7eb" stroke="#555555" stroke-width="1.2" points="646.04,-165.33 542.21,-165.33 542.21,-124.52 646.04,-124.52 646.04,-165.33" style=""/>
+<text text-anchor="middle" x="594.12" y="-148.22" font-family="Bitter" font-size="11.00" fill="#111111" style="">Google Vertex AI</text>
+<text text-anchor="middle" x="594.12" y="-135.02" font-family="Bitter" font-size="11.00" fill="#111111" style="">Managed MaaS</text>
 </g>
 <!-- CloudUsers -->
-<g id="node19" class="node" pointer-events="visible" data-name="CloudUsers">
+<g id="node16" class="node" pointer-events="visible" data-name="CloudUsers">
 
-<polygon fill="#d1fae5" stroke="#555555" stroke-width="1.2" points="435.91,-48.18 340.33,-48.18 340.33,-7.37 435.91,-7.37 435.91,-48.18"/>
-<text text-anchor="middle" x="388.12" y="-31.07" font-family="Bitter" font-size="11.00" fill="#111111">Hyperscaler</text>
-<text text-anchor="middle" x="388.12" y="-17.87" font-family="Bitter" font-size="11.00" fill="#111111">cloud customers</text>
+<polygon fill="#d1fae5" stroke="#555555" stroke-width="1.2" points="494.91,-48.18 399.33,-48.18 399.33,-7.37 494.91,-7.37 494.91,-48.18" style=""/>
+<text text-anchor="middle" x="447.12" y="-31.07" font-family="Bitter" font-size="11.00" fill="#111111" style="">Hyperscaler</text>
+<text text-anchor="middle" x="447.12" y="-17.87" font-family="Bitter" font-size="11.00" fill="#111111" style="">cloud customers</text>
 </g>
-<!-- LeChatEnterprise -->
-<g id="node20" class="node" pointer-events="visible" data-name="LeChatEnterprise">
+<!-- Enix -->
+<g id="node17" class="node" pointer-events="visible" data-name="Enix">
 
-<polygon fill="#bfdbfe" stroke="#2563eb" stroke-width="1.8" points="823.7,-299.65 716.54,-299.65 716.54,-258.85 823.7,-258.85 823.7,-299.65"/>
-<text text-anchor="middle" x="770.12" y="-282.55" font-family="Bitter" font-size="11.00" fill="#111111">Le Chat Enterprise</text>
-<text text-anchor="middle" x="770.12" y="-269.35" font-family="Bitter" font-size="11.00" fill="#111111">(May 2025)</text>
+<polygon fill="#f1f1f1" stroke="#b7b7b7" stroke-width="1.2" points="903.25,-291.55 749,-291.55 749,-250.75 903.25,-250.75 903.25,-291.55" style=""/>
+<text text-anchor="middle" x="826.12" y="-274.45" font-family="Bitter" font-size="11.00" fill="#888888" style="">Enix inference</text>
+<text text-anchor="middle" x="826.12" y="-261.25" font-family="Bitter" font-size="11.00" fill="#888888" style="">engineering and operations**</text>
 </g>
-<!-- MistralCode -->
-<g id="node21" class="node" pointer-events="visible" data-name="MistralCode">
+<!-- LeChat -->
+<g id="node18" class="node" pointer-events="visible" data-name="LeChat">
 
-<polygon fill="#bfdbfe" stroke="#2563eb" stroke-width="1.8" points="951.87,-299.65 870.38,-299.65 870.38,-258.85 951.87,-258.85 951.87,-299.65"/>
-<text text-anchor="middle" x="911.12" y="-282.55" font-family="Bitter" font-size="11.00" fill="#111111">Mistral Code</text>
-<text text-anchor="middle" x="911.12" y="-269.35" font-family="Bitter" font-size="11.00" fill="#111111">(June 2025)</text>
+<polygon fill="#bfdbfe" stroke="#2563eb" stroke-width="2" points="1050.7,-291.55 943.54,-291.55 943.54,-250.75 1050.7,-250.75 1050.7,-291.55" style=""/>
+<text text-anchor="middle" x="997.12" y="-274.45" font-family="Bitter" font-size="11.00" fill="#111111" style="">Le Chat Enterprise</text>
+<text text-anchor="middle" x="997.12" y="-261.25" font-family="Bitter" font-size="11.00" fill="#111111" style="">(May 2025)</text>
 </g>
-<!-- AIStudio -->
-<g id="node22" class="node" pointer-events="visible" data-name="AIStudio">
+<!-- Code -->
+<g id="node19" class="node" pointer-events="visible" data-name="Code">
 
-<polygon fill="#bfdbfe" stroke="#2563eb" stroke-width="1.8" points="1145.61,-299.65 998.64,-299.65 998.64,-258.85 1145.61,-258.85 1145.61,-299.65"/>
-<text text-anchor="middle" x="1072.12" y="-282.55" font-family="Bitter" font-size="11.00" fill="#111111">AI Studio</text>
-<text text-anchor="middle" x="1072.12" y="-269.35" font-family="Bitter" font-size="11.00" fill="#111111">Private beta (October 2025)</text>
+<polygon fill="#bfdbfe" stroke="#2563eb" stroke-width="2" points="1171.87,-291.55 1090.38,-291.55 1090.38,-250.75 1171.87,-250.75 1171.87,-291.55" style=""/>
+<text text-anchor="middle" x="1131.12" y="-274.45" font-family="Bitter" font-size="11.00" fill="#111111" style="">Mistral Code</text>
+<text text-anchor="middle" x="1131.12" y="-261.25" font-family="Bitter" font-size="11.00" fill="#111111" style="">(June 2025)</text>
+</g>
+<!-- Studio -->
+<g id="node20" class="node" pointer-events="visible" data-name="Studio">
+
+<polygon fill="#bfdbfe" stroke="#2563eb" stroke-width="2" points="1358.61,-291.55 1211.64,-291.55 1211.64,-250.75 1358.61,-250.75 1358.61,-291.55" style=""/>
+<text text-anchor="middle" x="1285.12" y="-274.45" font-family="Bitter" font-size="11.00" fill="#111111" style="">AI Studio</text>
+<text text-anchor="middle" x="1285.12" y="-261.25" font-family="Bitter" font-size="11.00" fill="#111111" style="">Private beta (October 2025)</text>
 </g>
 <!-- EnterpriseUsers -->
-<g id="node23" class="node" pointer-events="visible" data-name="EnterpriseUsers">
+<g id="node21" class="node" pointer-events="visible" data-name="EnterpriseUsers">
 
-<polygon fill="#d1fae5" stroke="#555555" stroke-width="1.2" points="952.83,-174.4 883.42,-174.4 883.42,-133.6 952.83,-133.6 952.83,-174.4"/>
-<text text-anchor="middle" x="918.12" y="-157.3" font-family="Bitter" font-size="11.00" fill="#111111">Enterprise</text>
-<text text-anchor="middle" x="918.12" y="-144.1" font-family="Bitter" font-size="11.00" fill="#111111">customers</text>
+<polygon fill="#d1fae5" stroke="#555555" stroke-width="1.2" points="1165.83,-165.33 1096.42,-165.33 1096.42,-124.52 1165.83,-124.52 1165.83,-165.33" style=""/>
+<text text-anchor="middle" x="1131.12" y="-148.22" font-family="Bitter" font-size="11.00" fill="#111111" style="">Enterprise</text>
+<text text-anchor="middle" x="1131.12" y="-135.02" font-family="Bitter" font-size="11.00" fill="#111111" style="">customers</text>
 </g>
-<!-- PrivateDeployment -->
-<g id="node24" class="node" pointer-events="visible" data-name="PrivateDeployment">
+<!-- EnterpriseDeployment -->
+<g id="node22" class="node" pointer-events="visible" data-name="EnterpriseDeployment">
 
-<path fill="#d1fae5" stroke="#555555" stroke-width="1.2" d="M1004.27,-50.32C1004.27,-53.08 965.66,-55.33 918.12,-55.33 870.59,-55.33 831.98,-53.08 831.98,-50.32 831.98,-50.32 831.98,-5.23 831.98,-5.23 831.98,-2.47 870.59,-0.22 918.12,-0.22 965.66,-0.22 1004.27,-2.47 1004.27,-5.23 1004.27,-5.23 1004.27,-50.32 1004.27,-50.32"/>
-<path fill="none" stroke="#555555" stroke-width="1.2" d="M1004.27,-50.32C1004.27,-47.55 965.66,-45.31 918.12,-45.31 870.59,-45.31 831.98,-47.55 831.98,-50.32"/>
-<text text-anchor="middle" x="918.12" y="-31.07" font-family="Bitter" font-size="11.00" fill="#111111">Enterprise-controlled deployment</text>
-<text text-anchor="middle" x="918.12" y="-17.87" font-family="Bitter" font-size="11.00" fill="#111111">(Private / hybrid / on-premises)</text>
+<path fill="#d1fae5" stroke="#555555" stroke-width="1.2" d="M1217.27,-50.32C1217.27,-53.08 1178.66,-55.33 1131.12,-55.33 1083.59,-55.33 1044.98,-53.08 1044.98,-50.32 1044.98,-50.32 1044.98,-5.23 1044.98,-5.23 1044.98,-2.47 1083.59,-0.22 1131.12,-0.22 1178.66,-0.22 1217.27,-2.47 1217.27,-5.23 1217.27,-5.23 1217.27,-50.32 1217.27,-50.32" style=""/>
+<path fill="none" stroke="#555555" stroke-width="1.2" d="M1217.27,-50.32C1217.27,-47.55 1178.66,-45.31 1131.12,-45.31 1083.59,-45.31 1044.98,-47.55 1044.98,-50.32" style=""/>
+<text text-anchor="middle" x="1131.12" y="-31.07" font-family="Bitter" font-size="11.00" fill="#111111" style="">Enterprise-controlled deployment</text>
+<text text-anchor="middle" x="1131.12" y="-17.87" font-family="Bitter" font-size="11.00" fill="#111111" style="">(Private / hybrid / on-premises)</text>
 </g>
-<!-- Legend -->
-<g id="node25" class="node" pointer-events="visible" data-name="Legend">
+<!-- ComputePlanned -->
+<g id="node23" class="node" pointer-events="visible" data-name="ComputePlanned">
 
-<text text-anchor="start" x="1010.12" y="-758.85" font-family="Bitter" font-size="11.00" fill="#111111">                        </text>
-<text text-anchor="start" x="1076.12" y="-758.85" font-family="Bitter" font-weight="bold" font-size="11.00" fill="#111111">LEGEND</text>
-<text text-anchor="start" x="1122.58" y="-758.85" font-family="Bitter" font-size="11.00" fill="#111111">                    </text>
-<text text-anchor="start" x="1010.12" y="-736.85" font-family="Bitter" font-size="11.00" fill="#111111">                        </text>
-<text text-anchor="start" x="1076.12" y="-736.85" font-family="Bitter" font-weight="bold" font-size="11.00" fill="#111111">Nodes</text>
-<text text-anchor="start" x="1104.85" y="-736.85" font-family="Bitter" font-size="11.00" fill="#111111">                    </text>
-<polygon fill="#bfdbfe" stroke="none" points="1007.12,-707.75 1007.12,-726.75 1111.12,-726.75 1111.12,-707.75 1007.12,-707.75"/>
-<text text-anchor="start" x="1117.12" y="-714.85" font-family="Bitter" font-size="11.00" fill="#111111">                        </text>
-<text text-anchor="start" x="1183.12" y="-714.85" font-family="Bitter" font-size="11.00" fill="#111111">Mistral AI / service</text>
-<text text-anchor="start" x="1268.96" y="-714.85" font-family="Bitter" font-size="11.00" fill="#111111">                    </text>
-<polygon fill="#e5e7eb" stroke="none" points="1007.12,-685.75 1007.12,-704.75 1111.12,-704.75 1111.12,-685.75 1007.12,-685.75"/>
-<text text-anchor="start" x="1117.12" y="-692.85" font-family="Bitter" font-size="11.00" fill="#111111">                        </text>
-<text text-anchor="start" x="1183.12" y="-692.85" font-family="Bitter" font-size="11.00" fill="#111111">External provider</text>
-<text text-anchor="start" x="1260.4" y="-692.85" font-family="Bitter" font-size="11.00" fill="#111111">                    </text>
-<polygon fill="#515151" stroke="none" points="1007.12,-663.75 1007.12,-682.75 1111.12,-682.75 1111.12,-663.75 1007.12,-663.75"/>
-<text text-anchor="start" x="1117.12" y="-670.85" font-family="Bitter" font-size="11.00" fill="#111111">                        </text>
-<text text-anchor="start" x="1183.12" y="-670.85" font-family="Bitter" font-size="11.00" fill="#111111">Computing infrastructure</text>
-<text text-anchor="start" x="1294.63" y="-670.85" font-family="Bitter" font-size="11.00" fill="#111111">                    </text>
-<polygon fill="#fef3c7" stroke="none" points="1007.12,-641.75 1007.12,-660.75 1111.12,-660.75 1111.12,-641.75 1007.12,-641.75"/>
-<text text-anchor="start" x="1117.12" y="-648.85" font-family="Bitter" font-size="11.00" fill="#111111">                        </text>
-<text text-anchor="start" x="1183.12" y="-648.85" font-family="Bitter" font-size="11.00" fill="#111111">Model / artifact</text>
-<text text-anchor="start" x="1251.54" y="-648.85" font-family="Bitter" font-size="11.00" fill="#111111">                    </text>
-<polygon fill="#d1fae5" stroke="none" points="1007.12,-619.75 1007.12,-638.75 1111.12,-638.75 1111.12,-619.75 1007.12,-619.75"/>
-<text text-anchor="start" x="1117.12" y="-626.85" font-family="Bitter" font-size="11.00" fill="#111111">                        </text>
-<text text-anchor="start" x="1183.12" y="-626.85" font-family="Bitter" font-size="11.00" fill="#111111">Users / deployment</text>
-<text text-anchor="start" x="1268.66" y="-626.85" font-family="Bitter" font-size="11.00" fill="#111111">                    </text>
-<text text-anchor="start" x="1010.12" y="-593.85" font-family="Bitter" font-size="11.00" fill="#111111">                        </text>
-<text text-anchor="start" x="1076.12" y="-593.85" font-family="Bitter" font-weight="bold" font-size="11.00" fill="#111111">Relationships</text>
-<text text-anchor="start" x="1139.7" y="-593.85" font-family="Bitter" font-size="11.00" fill="#111111">                    </text>
-<text text-anchor="start" x="1010.12" y="-571.85" font-family="Bitter" font-size="11.00" fill="#111111">                        </text>
-<text text-anchor="start" x="1076.12" y="-571.85" font-family="Bitter" font-size="11.00" fill="#b45309">━━━━━━</text>
-<text text-anchor="start" x="1125.62" y="-571.85" font-family="Bitter" font-size="11.00" fill="#111111">                    </text>
-<text text-anchor="start" x="1208.98" y="-571.85" font-family="Bitter" font-size="11.00" fill="#111111">                        </text>
-<text text-anchor="start" x="1274.98" y="-571.85" font-family="Bitter" font-size="11.00" fill="#111111">Compute provision / access</text>
-<text text-anchor="start" x="1396.27" y="-571.85" font-family="Bitter" font-size="11.00" fill="#111111">                    </text>
-<text text-anchor="start" x="1010.12" y="-549.85" font-family="Bitter" font-size="11.00" fill="#111111">                        </text>
-<text text-anchor="start" x="1076.12" y="-549.85" font-family="Bitter" font-size="11.00" fill="#2563eb">━━━━━━</text>
-<text text-anchor="start" x="1125.62" y="-549.85" font-family="Bitter" font-size="11.00" fill="#111111">                    </text>
-<text text-anchor="start" x="1209.12" y="-549.85" font-family="Bitter" font-size="11.00" fill="#111111">                        </text>
-<text text-anchor="start" x="1275.12" y="-549.85" font-family="Bitter" font-size="11.00" fill="#111111">Model / service provision</text>
-<text text-anchor="start" x="1387.85" y="-549.85" font-family="Bitter" font-size="11.00" fill="#111111">                    </text>
-<text text-anchor="start" x="1010.12" y="-527.85" font-family="Bitter" font-size="11.00" fill="#111111">                        </text>
-<text text-anchor="start" x="1076.12" y="-527.85" font-family="Bitter" font-size="11.00" fill="#059669">············</text>
-<text text-anchor="start" x="1142.12" y="-527.85" font-family="Bitter" font-size="11.00" fill="#111111">                    </text>
-<text text-anchor="start" x="1209.12" y="-527.85" font-family="Bitter" font-size="11.00" fill="#111111">                        </text>
-<text text-anchor="start" x="1275.12" y="-527.85" font-family="Bitter" font-size="11.00" fill="#111111">Deployment capability*</text>
-<text text-anchor="start" x="1381.12" y="-527.85" font-family="Bitter" font-size="11.00" fill="#111111">                    </text>
-<text text-anchor="start" x="1010.12" y="-505.85" font-family="Bitter" font-size="11.00" fill="#111111">                        </text>
-<text text-anchor="start" x="1076.12" y="-505.85" font-family="Bitter" font-size="11.00" fill="#b45309">- - - - - -</text>
-<text text-anchor="start" x="1111.85" y="-505.85" font-family="Bitter" font-size="11.00" fill="#111111">                    </text>
-<text text-anchor="start" x="1209.12" y="-505.85" font-family="Bitter" font-size="11.00" fill="#111111">                        </text>
-<text text-anchor="start" x="1275.12" y="-505.85" font-family="Bitter" font-size="11.00" fill="#111111">Announced initiative</text>
-<text text-anchor="start" x="1367.68" y="-505.85" font-family="Bitter" font-size="11.00" fill="#111111">                    </text>
-<text text-anchor="start" x="1010.12" y="-474.85" font-family="Bitter" font-size="11.00" fill="#111111">                        </text>
-<text text-anchor="start" x="1076.12" y="-474.85" font-family="Bitter" font-size="9.00" fill="#555555">                            * Capability does not imply actual deployment.                        </text>
-<text text-anchor="start" x="1363.84" y="-474.85" font-family="Bitter" font-size="11.00" fill="#111111">                    </text>
+<path fill="#fff7ed" stroke="#b45309" stroke-width="1.2" stroke-dasharray="5,2" d="M1549.38,-301.18C1549.38,-304.86 1515.65,-307.85 1474.12,-307.85 1432.6,-307.85 1398.87,-304.86 1398.87,-301.18 1398.87,-301.18 1398.87,-241.12 1398.87,-241.12 1398.87,-237.44 1432.6,-234.45 1474.12,-234.45 1515.65,-234.45 1549.38,-237.44 1549.38,-241.12 1549.38,-241.12 1549.38,-301.18 1549.38,-301.18" style=""/>
+<path fill="none" stroke="#b45309" stroke-width="1.2" stroke-dasharray="5,2" d="M1549.38,-301.18C1549.38,-297.5 1515.65,-294.5 1474.12,-294.5 1432.6,-294.5 1398.87,-297.5 1398.87,-301.18" style=""/>
+<text text-anchor="middle" x="1474.12" y="-281.05" font-family="Bitter" font-size="11.00" fill="#b45309" style="">Mistral Compute</text>
+<text text-anchor="middle" x="1474.12" y="-267.85" font-family="Bitter" font-size="11.00" fill="#b45309" style="">Announced June 2025</text>
+<text text-anchor="middle" x="1474.12" y="-254.65" font-family="Bitter" font-size="11.00" fill="#b45309" style="">(not yet verified operational)</text>
 </g>
 </g>
 </svg>
