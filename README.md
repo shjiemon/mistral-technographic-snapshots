@@ -23,6 +23,16 @@ The project investigates the relationship between:
 
 Snapshots represent documented configurations rather than exhaustive infrastructure inventories. The diagrams distinguish established relationships from technical capabilities and announced arrangements.
 
+## Evidence register
+
+The diagrams are based on a [technographic evidence register](https://docs.google.com/spreadsheets/d/1dL5M2QMF2TcRpt84B57iQuj-Xqew7yIV_ZRQTRB3nUE/edit) (Google Sheets).
+
+The register documents the principal infrastructural relationships and deployment capabilities represented across the five snapshots (T₀–T₄), including their evidentiary status, supporting sources, and relevant qualifications.
+
+The register served as input for the ChatGPT-assisted generation of the Graphviz code, which was subsequently reviewed and refined by the author. The diagrams were further refined in Figma.
+
+The register serves as a concise index of empirical evidence rather than an exhaustive source archive.
+
 ## Repository structure
 
 ```text
@@ -33,12 +43,12 @@ exports/   Finalized diagrams (Figma exports)
 
 ## Tools
 
-Diagrams are created using [Graphviz](https://graphviz.org/) and visually refined in Figma.
+Graphviz DOT source code was generated with assistance from ChatGPT, using the technographic evidence register as input. The diagrams were rendered using [Graphviz](https://graphviz.org/) and visually refined in Figma.
 
-To generate an SVG:
+To generate an SVG (replace the example filenames with your own):
 
 ```bash
-dot -Tsvg src/T1-december-2023.dot -o svg/T1-december-2023.svg
+dot -Tsvg graphviz-input-file.dot -o output-file.svg
 ```
 
 ## Related project
